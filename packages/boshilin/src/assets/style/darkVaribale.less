@@ -1,0 +1,340 @@
+@primaryColor: #0013c1;
+@hoverColor: #3345e7;
+@primaryTxtColor: #fff;
+@selectBgColor: #f2f3fc;
+@btnTxtColor: #666;
+@btnDisabledBorderColor: #d9d9d9;
+@btnBg: rgba(38, 49, 65, 0.1);
+@btnColor: #263141;
+@btnBgHover: rgba(38, 49, 65, 0.15);
+@boxShadow: rgba(0, 0, 0, 0.2);
+.common-color {
+  // 日期选择器
+  .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+    border-color: @hoverColor;
+    border-radius: 24px !important;
+  }
+  .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+    background: @primaryColor;
+    border-radius: 24px !important;
+  }
+  .ant-picker-cell-in-view.ant-picker-cell-in-range::before {
+    background: #f2f6fc;
+  }
+  // 树多选
+  .ant-select-tree-checkbox {
+    &:hover {
+      border-color: @hoverColor;
+    }
+  }
+  .ant-select-tree-checkbox-checked .ant-select-tree-checkbox-inner {
+    background-color: @primaryColor;
+    border-color: @primaryColor;
+  }
+  // 按钮
+  .ant-btn {
+    color: @btnTxtColor;
+    background: @primaryTxtColor;
+  }
+  .ant-btn:hover,
+  .ant-btn:focus {
+    color: @primaryColor;
+    background: @primaryTxtColor;
+    border-color: @primaryColor;
+  }
+
+  .ant-btn-sm {
+    background: @primaryTxtColor;
+  }
+  .ant-btn-sm:hover,
+  .ant-btn-sm:focus {
+    color: @primaryColor;
+    border-color: @primaryColor;
+  }
+  .ant-switch-checked {
+    background: @primaryColor;
+  }
+  .ant-btn-primary {
+    color: @primaryTxtColor;
+    background: @primaryColor;
+    border-color: @primaryColor;
+  }
+  .ant-btn-primary:hover,
+  .ant-btn-primary:focus {
+    color: @primaryTxtColor;
+    background-color: @hoverColor;
+    border-color: @primaryColor;
+  }
+  .ant-modal-footer {
+    .ant-btn {
+      color: @btnColor;
+      background: @btnBg;
+      border: none;
+    }
+    .ant-btn:hover,
+    .ant-btn:focus {
+      color: @btnColor;
+      background: @btnBgHover;
+    }
+    .ant-btn-primary {
+      color: @primaryTxtColor;
+      background: @primaryColor;
+      border-color: @primaryColor;
+    }
+    .ant-btn-primary:hover,
+    .ant-btn-primary:focus {
+      color: @primaryTxtColor;
+      background-color: @hoverColor;
+      border-color: @primaryColor;
+    }
+  }
+  .ant-btn-dangerous {
+    color: @primaryTxtColor;
+    background: @primaryColor;
+    border-color: @primaryColor;
+  }
+  .ant-btn-dangerous:hover,
+  .ant-btn-dangerous:focus {
+    color: @primaryTxtColor;
+    background-color: @hoverColor;
+    border-color: @primaryColor;
+  }
+  .ant-btn[disabled],
+  .ant-btn[disabled]:hover,
+  .ant-btn[disabled]:focus,
+  .ant-btn[disabled]:active {
+    color: rgba(0, 0, 0, 0.25);
+    text-shadow: none;
+    background: #f5f5f5;
+    border-color: @btnDisabledBorderColor;
+    box-shadow: none;
+  }
+  // 日期选择框
+  .ant-picker:hover,
+  .ant-picker-focused {
+    border-color: @primaryColor;
+    box-shadow: none;
+  }
+  .ant-picker-range .ant-picker-active-bar {
+    background: @hoverColor;
+  }
+  // 单选
+  .ant-radio-checked {
+    .ant-radio-inner {
+      border-color: @primaryColor;
+      &::after {
+        background-color: @primaryColor;
+      }
+    }
+  }
+  .ant-radio-input:focus + .ant-radio-inner {
+    box-shadow: none;
+  }
+  .ant-radio-wrapper:hover .ant-radio,
+  .ant-radio:hover .ant-radio-inner,
+  .ant-radio-input:focus + .ant-radio-inner {
+    border-color: @primaryColor;
+  }
+
+  // 输入框
+  .ant-input-affix-wrapper {
+    border-color: @btnDisabledBorderColor;
+    border-radius: 4;
+    box-shadow: none;
+  }
+  .ant-input:hover,
+  .ant-input-affix-wrapper:hover {
+    border-color: @hoverColor !important;
+    box-shadow: none;
+  }
+  .ant-input:focus,
+  .ant-input-focused,
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused {
+    border-color: @primaryColor !important;
+    box-shadow: none;
+  }
+  .ant-input[disabled]:hover,
+  .ant-input-affix-wrapper-disabled:hover {
+    border-color: @btnDisabledBorderColor !important;
+  }
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: @hoverColor;
+  }
+  .ant-input-search-button {
+    background: @primaryColor;
+  }
+  .ant-input-search-button:hover,
+  .ant-input-search-button:focus {
+    color: @primaryTxtColor;
+    background: @hoverColor;
+    border-color: @hoverColor;
+  }
+  // 数字输入框
+  .ant-input-number {
+    // margin-right: 10px;
+    height: 40px;
+    line-height: 40px;
+    &:hover {
+      border-color: #0013c1;
+    }
+    &:focus {
+      border-color: #0013c1;
+      box-shadow: none;
+    }
+  }
+  .ant-input-number-focused {
+    border-color: #0013c1 !important;
+    box-shadow: none;
+  }
+  .ant-input-number-handler:hover .ant-input-number-handler-up-inner,
+  .ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+    color: #0013c1 !important;
+  }
+  // 分页器
+  .ant-pagination-item-active a {
+    color: @primaryColor;
+    border-color: @primaryColor;
+  }
+  .ant-pagination-item-active:focus-visible a,
+  .ant-pagination-item-active:hover a {
+    color: @hoverColor;
+    border-color: @hoverColor;
+  }
+  .ant-pagination-item-active {
+    border-color: @primaryColor;
+  }
+  .ant-pagination-item:focus-visible,
+  .ant-pagination-item:hover {
+    color: @hoverColor;
+    border-color: @hoverColor;
+  }
+  .ant-pagination-item:focus-visible a,
+  .ant-pagination-item:hover a {
+    color: @hoverColor;
+  }
+
+  .ant-pagination-options-quick-jumper input:hover {
+    border-color: @hoverColor;
+    box-shadow: none;
+  }
+  .ant-pagination-options-quick-jumper input:focus {
+    border-color: @hoverColor;
+  }
+  .ant-pagination-disabled .ant-pagination-item-link,
+  .ant-pagination-disabled:hover .ant-pagination-item-link,
+  .ant-pagination-disabled:focus-visible .ant-pagination-item-link {
+    color: rgba(0, 0, 0, 0.25) !important;
+  }
+  .ant-pagination-prev:focus-visible .ant-pagination-item-link,
+  .ant-pagination-next:focus-visible .ant-pagination-item-link,
+  .ant-pagination-prev:hover .ant-pagination-item-link,
+  .ant-pagination-next:hover .ant-pagination-item-link {
+    color: @hoverColor;
+  }
+  .ant-pagination-options-quick-jumper input:hover,
+  .ant-pagination-options-quick-jumper input:focus {
+    border-color: @hoverColor;
+    box-shadow: none;
+  }
+  // 树选择
+  .site-tree-search-value {
+    // background: #F2F3FC;
+    color: @primaryColor;
+  }
+  .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+    background-color: @hoverColor;
+    border-color: @hoverColor !important;
+  }
+  .ant-tree-checkbox:hover {
+    border-color: @hoverColor !important;
+  }
+
+  .ant-tree-checkbox-wrapper:hover .ant-tree-checkbox-inner,
+  .ant-tree-checkbox:hover .ant-tree-checkbox-inner,
+  .ant-tree-checkbox-input:focus + .ant-tree-checkbox-inner {
+    border-color: @primaryColor;
+  }
+
+  .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner::after {
+    background-color: @hoverColor;
+  }
+
+  .ant-checkbox:hover {
+    border-color: @hoverColor !important;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: @hoverColor;
+    border-color: @hoverColor !important;
+  }
+  .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+  .ant-checkbox:hover .ant-checkbox-inner,
+  .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: @primaryColor;
+  }
+
+  .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    background-color: @hoverColor;
+  }
+  // 验证失败提示颜色
+  .ant-form-item-explain-error {
+    color: #ff4d4f;
+  }
+  // 下拉框
+  .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+    border-color: @primaryColor;
+    box-shadow: none;
+  }
+  .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    color: rgba(0, 0, 0, 0.25);
+    border-color: @btnDisabledBorderColor;
+  }
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+    .ant-select-selector {
+    border-color: @primaryColor !important;
+    box-shadow: none !important;
+  }
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    color: @primaryColor;
+    background-color: @selectBgColor;
+  }
+
+  // 表格
+  .ant-badge-status-text,
+  .ant-typography,
+  .ant-table-tbody > tr > td {
+    color: @btnTxtColor !important;
+  }
+  .ant-table-tbody > tr.ant-table-row-selected > td {
+    background: @selectBgColor;
+  }
+  .ant-table-tbody > tr.ant-table-row:hover > td {
+    background-color: @selectBgColor;
+  }
+  // 树
+  .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    color: @primaryColor;
+    background-color: @selectBgColor;
+  }
+  .ant-tree.ant-tree-directory .ant-tree-treenode-selected::before,
+  .ant-col .ant-tree.ant-tree-directory .ant-tree-treenode-selected:hover::before {
+    background: @selectBgColor;
+  }
+  .ant-col
+    .ant-tree.ant-tree-directory
+    .ant-tree-treenode
+    .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    color: @primaryColor;
+    background: @selectBgColor;
+  }
+
+  // 表格操作文字颜色
+  .ahover {
+    color: @primaryColor;
+  }
+  .ahover:hover {
+    color: @hoverColor;
+  }
+}

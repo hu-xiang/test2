@@ -1,0 +1,1069 @@
+:global {
+  .dataCrapAddress {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: #fff;
+    transform: translateY(-10px);
+  }
+
+  .ant-form-item-label {
+    label {
+      &::after {
+        content: ' ';
+      }
+    }
+  }
+
+  .sceneNameItem {
+    .ant-form-item-label {
+      flex: unset;
+      text-align: left;
+    }
+    .ant-col-19 {
+      max-width: 100%;
+    }
+  }
+
+  .createOrEditModalWrapper {
+    .ant-select .ant-select-selector input {
+      width: 90%;
+      height: auto !important;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+
+    .ant-input-group-addon {
+      display: none;
+    }
+  }
+
+  .baseLineWrapper.page-list-common .page-table-one-box {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .hiddenScenarioWrapper.page-list-common .page-table-one-box {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .page-list-common .check-list-table .ant-table-expanded-row .ant-pro-card-body {
+    padding: 0 0 0 3.13% !important;
+  }
+}
+.expand-check-table {
+  :global {
+    .expand-table-class {
+      .ant-table-placeholder .ant-empty-normal {
+        height: 150px !important;
+      }
+    }
+    .ant-table-expanded-row-fixed {
+      padding: 5px 16px;
+    }
+  }
+}
+// .expand-check-son-table{
+//   :global{
+//     .ant-table-expanded-row-fixed{
+//       padding: 5px 16px;
+//     }
+//   }
+// }
+// 场景列表
+.hiddenScenarioWrapper {
+  padding: 30px 20px 20px;
+
+  :global {
+    .ant-image {
+      padding: 0 !important;
+    }
+  }
+
+  .handleBtns {
+    margin: 20px 0;
+
+    button {
+      margin-right: 10px;
+    }
+  }
+
+  .tabOpsDisabled {
+    color: #c7bfbf !important;
+    cursor: no-drop;
+  }
+}
+
+// 隐患点排查
+.spotCheckModal {
+  // max-width: 1295px;
+  :global {
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+
+    .ant-tabs-nav-wrap {
+      padding-left: 20px;
+    }
+
+    .ant-tabs-content-holder {
+      padding-left: 20px;
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #0013c1;
+    }
+
+    .ant-tabs-ink-bar {
+      background: #0013c1;
+    }
+  }
+}
+.backList {
+  display: inline-block;
+  cursor: pointer;
+  span {
+    font-weight: 700;
+  }
+}
+
+.utilsLayer {
+  :global {
+    .ant-image {
+      display: flex;
+    }
+  }
+  & span {
+    margin: 0 10px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .graphicType {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    padding: 11px 8px;
+    // background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    .graphicTypeTop {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      padding: 10px 0;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 4px;
+    }
+    .graphicTypeBottom {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 4px;
+    }
+    span {
+      padding: 20px 0;
+      &:first-child {
+        padding: 4px 0 20px 0;
+      }
+      &:last-child {
+        padding: 20px 0 4px 0;
+      }
+    }
+
+    .graphicIcon {
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 14px;
+        left: -5px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: rgba(55, 87, 255, 0.5);
+        border-radius: 2px;
+        content: '';
+      }
+      &.startIcon::before {
+        top: -1px;
+      }
+    }
+  }
+}
+
+.spotTypeTabs {
+  flex: 1;
+  .tabItemWrapper {
+    margin-top: -6px;
+    padding-left: 10px;
+  }
+  .tabRadioItem {
+    margin-bottom: 50px;
+    :global {
+      .ant-form-item-row {
+        flex-direction: column;
+        align-items: baseline;
+      }
+    }
+  }
+}
+.rowButton {
+  button:first-child {
+    margin-right: 10px;
+  }
+
+  margin-bottom: 20px;
+}
+.dataCropModalWrapper {
+  .infoWindow {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    .mapWinTitle {
+      margin: 0 0 10px 29px;
+    }
+    .markerIconGroup {
+      position: relative;
+      display: flex;
+      align-items: center;
+      .markerCenterImg {
+        width: 352px;
+        height: 250px;
+      }
+      .markerToggle {
+        font-size: 24px;
+        cursor: pointer;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .markerToggleLeft {
+        margin-right: 5px;
+      }
+      .markerToggleRight {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .infoWindowBtn {
+    padding-top: 9px;
+    padding-right: 20px;
+    text-align: right;
+    :global {
+      button {
+        width: 60px;
+        height: 30px;
+
+        &:first-child {
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+}
+
+.spotTypeWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  display: flex;
+  height: 100%;
+  .spotCheckContent {
+    max-width: 330px;
+    padding: 20px 20px 170px;
+    overflow-y: auto;
+    background-color: #fff;
+    :global {
+      .ant-row {
+        flex-direction: column;
+        align-items: baseline;
+      }
+      .ant-radio-wrapper {
+        margin: 20px 12px 0 0;
+      }
+      .ant-form-item-control {
+        width: 100%;
+      }
+      .ant-form-item {
+        height: auto;
+        margin: 0 0 31px;
+        .ant-form-item-label {
+          line-height: 20px;
+          label {
+            height: 20px !important;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .remarkItem {
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 48px);
+      height: auto;
+      margin: 0 -20px;
+      padding: 0 20px 20px;
+      background-color: #fff;
+      border-top: 1px solid #dcdfe6;
+      :global {
+        .ant-form-item-label {
+          padding: 20px 0 10px;
+        }
+      }
+    }
+  }
+  .spotCheckType {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    padding: 10px 0;
+    .itemTab {
+      width: 40px;
+      margin-bottom: 10px;
+      padding: 8px 12px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(220, 223, 230, 0.2);
+      border-radius: 10px 0 0 10px;
+      cursor: pointer;
+      opacity: 0.8;
+    }
+    .activeTab {
+      width: 48px;
+      padding: 8px 16px;
+      background: rgba(55, 87, 255, 0.8);
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+}
+
+.createOrEditModalWrapper {
+  .createProContentWrapper {
+    position: relative;
+    .searchIcon {
+      position: absolute;
+      right: 5%;
+      bottom: 62%;
+      z-index: 100;
+    }
+    .searchIconImgLib {
+      bottom: 36%;
+    }
+  }
+  .uploadJsonFormItem {
+    height: auto;
+  }
+
+  .uploadFileListWrapper {
+    // position: absolute;
+    // top: 10px;
+    // left: 116px;
+    display: flex;
+    flex-direction: column;
+    max-height: 134px;
+    margin-top: 6px;
+    overflow-y: auto;
+    // width: 50%;
+    .fileItem {
+      display: flex;
+      // margin-bottom: 4px;
+      padding: 5px 8px;
+      border-radius: 4px;
+      &:hover {
+        background-color: #f9f9f9;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #c0c0c0;
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background: #7c7c7c;
+      }
+    }
+  }
+
+  .fileName {
+    flex: 1;
+    padding-left: 6px;
+    color: #0013c1;
+  }
+
+  .uploadDel {
+    cursor: pointer;
+
+    .uploadIconActive {
+      display: none;
+    }
+
+    &:hover {
+      .uploadIconActive {
+        display: inline-block;
+      }
+
+      .uploadIcon {
+        display: none;
+      }
+    }
+  }
+}
+
+.fixValidateFormItem {
+  position: absolute;
+  top: 34%;
+  left: 19%;
+  z-index: 100;
+  width: 400px;
+}
+
+.customEmptyImg {
+  width: 100%;
+}
+
+// 项目排查列表
+.baseListWrapper {
+  padding: 36px 20px 20px;
+
+  .rowClass {
+    // display: flex;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .inpBox {
+    // flex: 1;
+    // vertical-align: middle;
+    display: inline-block;
+    width: calc(100% / 4);
+
+    .comClass {
+      display: inline-block;
+      width: calc(100% - 80px);
+      height: 40px;
+      margin: 0 10px;
+      line-height: 40px;
+    }
+  }
+
+  .timerBox {
+    // display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    width: 70%;
+
+    .timeBox {
+      display: inline-block;
+      width: 30%;
+      min-width: 215px;
+
+      :global {
+        .ant-picker {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .dateSel {
+      display: inline-block;
+      width: 68px;
+      height: 40px;
+      margin-right: 10px;
+      color: #0013c1;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:first-child {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        background: #e9ebff;
+      }
+    }
+
+    .btnLight {
+      background: #e9ebff;
+    }
+  }
+
+  .selBtnBox {
+    display: inline-flex;
+
+    button:first-child {
+      margin: 0 10px;
+    }
+  }
+}
+
+// 详情页
+.detailsWrapper {
+  padding: 30px 20px 20px;
+
+  .dataDetail {
+    padding-bottom: 30px;
+  }
+
+  .baseInfoContent {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      display: flex;
+      flex: 0 0 25%;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .label {
+      flex: 0 0 90px;
+      padding-right: 10px;
+      color: #666;
+      text-align: right;
+    }
+
+    .val {
+      flex: 1;
+      max-width: 298px;
+
+      input {
+        height: 40px;
+      }
+    }
+  }
+
+  .dataDetailInfo {
+    display: flex;
+    margin-bottom: 20px;
+
+    .upList {
+      display: flex;
+      margin-right: 80px;
+      color: #000;
+
+      .label {
+        margin-right: 10px;
+      }
+    }
+
+    .downList {
+      display: flex;
+      flex: 1;
+      color: #000;
+
+      .label {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .detailContentWrapper {
+    margin-top: 16px;
+    padding: 20px;
+    background-color: #fff;
+
+    .detailsContentInner {
+      padding: 0 20px;
+    }
+  }
+
+  .subTitle {
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .typeTitle {
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: 600;
+  }
+
+  .lineTitle {
+    margin: 30px 0;
+    color: #000;
+    font-size: 16px;
+  }
+
+  .dataDetailContent {
+    padding: 20px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    opacity: 0.95;
+  }
+
+  .chartWrapper {
+    max-width: 80%;
+    margin-bottom: 60px;
+  }
+
+  .detailPageMapArea {
+    width: 100%;
+    height: 100% !important;
+    min-height: 260px;
+    overflow: hidden;
+  }
+}
+
+.dataCropContent {
+  position: relative;
+  height: calc(100vh - 300px);
+  padding-bottom: 20px;
+  .optLayer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .opBtn {
+      width: 200px;
+      height: 40px;
+      margin-top: 10px;
+      text-align: center;
+      background: #fff;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  .DataCropMapArea {
+    width: 100%;
+    height: 100% !important;
+    // min-height: 656px;
+    overflow: hidden;
+  }
+
+  .imgPos {
+    position: relative;
+    width: 200px;
+    margin-top: 10px;
+    padding: 4px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    .closeIcon {
+      position: absolute;
+      top: -53px;
+      right: -190px;
+      z-index: 5;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+    }
+
+    .mapCropImg {
+      width: 192px;
+      height: 108px;
+      border: none;
+    }
+  }
+}
+
+.canvasWrapper {
+  // width: 929px;
+  height: 100%;
+  // border: 1px solid green;
+}
+
+.dataCropImgWrapper {
+  width: 397px;
+  // height: 120px;
+  cursor: pointer;
+
+  .cropImgTip {
+    width: 104px;
+    height: 104px;
+    line-height: 104px;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #dcdfe6;
+    border-radius: 2px;
+  }
+}
+
+.customFormItem {
+  height: auto !important;
+}
+// 点位排查
+.spotCheckWrapper {
+  position: relative;
+  display: flex;
+  flex: 1;
+
+  .sourceImg {
+    position: relative;
+    // flex: 0 0 929px;
+
+    .posLayer {
+      position: absolute;
+      left: 50%;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 100px;
+      transform: translate(-50%, 10px);
+
+      span {
+        display: inline-block;
+        width: 110px;
+      }
+
+      .activeBtn {
+        padding: 9px 46px;
+        color: #fff;
+        background: rgba(55, 87, 255, 0.8);
+        border-radius: 100px;
+        cursor: pointer;
+      }
+
+      .commonBtn {
+        padding: 9px 46px;
+        color: #fff;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.spotCheckItemTips {
+  display: flex;
+  align-items: center;
+  img {
+    margin-top: -10px;
+  }
+}
+// 场景排查
+.ScenarioCheckWrapper {
+  padding: 20px;
+  .sceneCheckContentWrapper {
+    margin-top: 14px;
+    background-color: #fff;
+  }
+
+  .sceneName {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+    border-bottom: 1px solid #e8e8e8;
+    &.sceneNameSpotCheck {
+      padding: 16px 20px;
+    }
+    .back {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .questionDetail {
+    max-height: 300px;
+    padding: 16px 20px;
+    overflow-y: auto;
+    color: rgba(0, 0, 0, 0.85);
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #c0c0c0;
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background: #7c7c7c;
+      }
+    }
+  }
+
+  .questionTitle {
+    padding: 12px 20px;
+    font-weight: 700;
+    background: #f6f6f6;
+  }
+
+  .sceneContent {
+    display: flex;
+    height: calc(100vh - 175px);
+    overflow-y: auto;
+
+    .sceneTreeWrapper {
+      flex: 3;
+      padding: 10px;
+
+      :global {
+        .ant-tree {
+          min-height: 400px;
+          max-height: 400px;
+          overflow-y: auto;
+          &::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #c0c0c0;
+            border-radius: 10px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+
+            &:hover {
+              background: #7c7c7c;
+            }
+          }
+        }
+        .ant-tree-treenode {
+          padding-right: 10px;
+        }
+        // .ant-tree-node-content-wrapper {
+        // overflow-x: hidden;
+        // white-space: nowrap;
+        // text-overflow: ellipsis;
+        // }
+        .ant-tree-indent-unit {
+          width: 5px;
+        }
+      }
+    }
+
+    .sceneQuestions {
+      flex: 2;
+    }
+
+    .navSideLeft {
+      // display: flex;
+      display: inline-block;
+      // flex: 0 0 320px;
+      flex-direction: column;
+    }
+
+    .mapArea {
+      position: relative;
+      flex: 1;
+      height: 100%;
+      .mapLegend {
+        position: absolute;
+        right: 12px;
+        bottom: 10px;
+        z-index: 10;
+        padding: 10px;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0.9;
+        .legendItem {
+          display: flex;
+          margin-bottom: 2px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          span {
+            padding: 3px 0 0 4px;
+            color: #666;
+          }
+        }
+      }
+      // .sceneImgs {
+      //   position: absolute;
+      //   left: 50%;
+      //   z-index: 2;
+      //   display: flex;
+      //   width: 96.8%;
+      //   padding: 10px;
+      //   overflow-x: auto;
+      //   background-color: #fff;
+      //   transform: translate(-50%, 10px);
+
+      //   .sceneImg {
+      //     position: relative;
+      //     flex: 1;
+      //     margin-right: 6px;
+
+      //     &:last-child {
+      //       margin-right: 0;
+      //     }
+
+      //     :global {
+      //       .ant-image {
+      //         width: 100%;
+      //       }
+      //     }
+
+      //     .sceneImgIndex {
+      //       position: absolute;
+      //       left: 50%;
+      //       z-index: 1;
+      //       padding: 9px 35px;
+      //       color: #fff;
+      //       font-size: 18px;
+      //       line-height: 22px;
+      //       background: rgba(0, 0, 0, 0.5);
+      //       border-radius: 100px;
+      //       transform: translate(-50%, 10px);
+      //     }
+
+      //     .sceneImgItme {
+      //       width: 100%;
+      //       max-height: 240px;
+      //     }
+      //   }
+      // }
+      .sceneImgWrapper {
+        display: flex;
+
+        .sceneImgPreview {
+          position: relative;
+          flex: 1;
+          padding: 6px 6px 6px 0;
+          img {
+            border-radius: 4px;
+          }
+        }
+        .sceneImgList {
+          display: flex;
+          flex: 0 0 372px;
+          flex-direction: column;
+          .sceneImg {
+            position: relative;
+            margin-top: 6px;
+            padding-right: 6px;
+            border-radius: 4px;
+            &:last-child {
+              margin-bottom: 7px;
+            }
+
+            :global {
+              .ant-image {
+                width: 100%;
+                img {
+                  border: 2px solid rgba(255, 255, 255, 0.5);
+                  border-radius: 4px;
+                }
+              }
+            }
+          }
+          .activeSceneImg {
+            // border: 2px solid #0013c1;
+            :global {
+              .ant-image {
+                img {
+                  border: 2px solid #0013c1;
+                }
+              }
+            }
+          }
+        }
+        .sceneImgIndex {
+          position: absolute;
+          left: 50%;
+          z-index: 1;
+          padding: 4px 29px;
+          color: #fff;
+          font-size: 18px;
+          line-height: 22px;
+          background: rgba(0, 0, 0, 0.5);
+          border-radius: 100px;
+          transform: translate(-50%, 10px);
+        }
+      }
+
+      .sceneOpBtns {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        z-index: 1;
+        transform: translateX(-50%);
+
+        button {
+          margin-right: 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .sceneMap {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .qItem {
+    margin-bottom: 12px;
+
+    .qLabel {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .ScenarioCheckWrapper {
+    .questionDetail {
+      max-height: 120px;
+      padding: 16px 20px;
+      overflow-y: auto;
+      color: rgba(0, 0, 0, 0.85);
+    }
+    // .sceneContent {
+    //   height: calc(100vh - 155px);
+    // }
+  }
+}
+
+// 点位排查-图标
+.iconMenu {
+  display: flex;
+  align-items: flex-start;
+  margin: -10px 0 0 35px !important;
+}
+
+.spotTypeMask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.customDropdownWrapper {
+  padding: 0 0 0 34px;
+}

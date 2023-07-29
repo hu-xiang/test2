@@ -1,0 +1,114 @@
+#AVTDetail {
+  .taskBack {
+    display: flex;
+    width: 140px;
+    margin: 24px 0 0 20px;
+    cursor: pointer;
+
+    .backText {
+      padding-left: 10px;
+      color: #263141 !important;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+
+  .topSelect {
+    .rowClass {
+      display: flex;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .inpBox {
+      display: inline-flex;
+      align-items: center;
+      width: 33%;
+
+      .rowLabel {
+        display: inline-flex;
+        justify-content: end;
+        width: 50px;
+        min-width: 56px;
+      }
+
+      .comClass {
+        display: inline-block;
+        width: calc(100% - 80px);
+        height: 40px;
+        margin: 0 10px;
+        line-height: 40px;
+      }
+    }
+
+    .selBtnBox {
+      display: flex;
+      //margin-left: 10px;
+
+      &::after {
+        display: inline-block;
+        clear: both;
+        content: '';
+      }
+    }
+  }
+
+  .rowContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .leftBox {
+      & button {
+        margin-right: 20px;
+      }
+    }
+
+    .rightBox {
+      display: inline-flex;
+
+      & div {
+        height: 40px;
+        margin-left: 10px;
+        line-height: 40px;
+        border-radius: 50px;
+
+        & span {
+          // font-family: 'PingFang SC';
+          color: #000;
+          font-weight: 400;
+          font-size: 14px;
+          font-style: normal;
+        }
+        span:first-child {
+          padding-left: 20px;
+        }
+        span:last-child {
+          padding-right: 20px;
+        }
+      }
+
+      .rightItem {
+        min-width: 128px;
+        background: rgba(0, 19, 193, 0.05);
+      }
+
+      .rightItemOther {
+        min-width: 97px;
+      }
+
+      .rightItem3 {
+        background: rgba(84, 163, 37, 0.2);
+      }
+
+      .rightItem4 {
+        background: rgba(255, 0, 0, 0.2);
+      }
+
+      .rightItem5 {
+        background: rgba(250, 204, 42, 0.2);
+      }
+    }
+  }
+}

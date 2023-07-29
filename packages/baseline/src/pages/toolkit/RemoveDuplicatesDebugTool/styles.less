@@ -1,0 +1,466 @@
+:global {
+  .duplicatesListbox2 {
+    top: calc(50vh - 316px) !important;
+    width: 1300px !important;
+    .tablebox2 {
+      .ant-table-body {
+        min-height: 426px;
+        max-height: 426px !important;
+        overflow-y: auto !important;
+      }
+      .ant-table-placeholder .ant-table-cell {
+        //max-width: 1000px;
+        height: 355px !important; //比表格滚动条设置要小，不然无数据时也有滚动条
+        border-bottom: none;
+      }
+      .ant-table-thead > tr > th {
+        background: #f4f8ff !important;
+      }
+    }
+  }
+  // .moveten {
+  //   .ant-form-item-label > label {
+  //     height: 40px !important;
+  //   }
+  //   .ant-select-selector {
+  //     height: 40px !important;
+  //     input {
+  //       height: 40px !important;
+  //     }
+  //     .ant-select-selection-item,
+  //     .ant-select-selection-placeholder {
+  //       line-height: 40px !important;
+  //     }
+  //   }
+  //   .ant-picker {
+  //     width: 100%;
+  //     height: 40px !important;
+  //   }
+  //   .treeselBox {
+  //     .ant-select-selection-item,
+  //     .ant-select-selection-placeholder {
+  //       line-height: 22px !important;
+  //     }
+  //     .ant-select-selection-overflow-item {
+  //       top: -5px !important;
+  //     }
+  //   }
+  // }
+}
+// .tenmMoveBox {
+//   margin-top: 10px;
+//   overflow: hidden;
+// }
+.selTreeBoxTen {
+  border-bottom: 1px solid rgba(220, 223, 230, 0.9);
+  :global {
+    .ant-tree-select-dropdown .ant-select-tree-list-holder-inner {
+      margin-top: 4px !important;
+    }
+  }
+  .selTreeAllOrNull {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: #0013c1;
+    }
+  }
+  .lightSelTree {
+    color: #0013c1;
+  }
+}
+#DebugToolcontainer {
+  // width: 100%;
+  // height: calc(100% - 40px);
+  // color: #666;
+  // :global {
+  //   .ant-btn {
+  //     height: 40px;
+  //   }
+  //   .ant-btn-primary {
+  //     margin: 0 20px 0 10px;
+  //   }
+  //   .startIconBox {
+  //     .ant-form-item-label > label {
+  //       height: 40px;
+  //     }
+  //     .ant-select-selector {
+  //       height: 40px;
+  //       input {
+  //         height: 40px;
+  //       }
+  //       .ant-select-selection-item,
+  //       .ant-select-selection-placeholder {
+  //         line-height: 40px;
+  //       }
+  //     }
+  //     .ant-picker {
+  //       width: 100%;
+  //       height: 40px;
+  //     }
+  //     .treeselBox {
+  //       .ant-select-selection-item,
+  //       .ant-select-selection-placeholder {
+  //         line-height: 22px;
+  //       }
+  //       .ant-select-selection-overflow-item {
+  //         top: -5px !important;
+  //       }
+  //     }
+  //   }
+  // }
+  // #ManualAuditToolContainer {
+  //   width: calc(100% - 20px);
+  //   height: calc(100vh - 100px);
+  //   margin: 30px 10px 10px;
+  //   // padding-left: 40px;
+  //   background: #fff;
+  //   border: 1px solid #fff;
+  //   border-radius: 4px;
+  //   .toolStartBox {
+  //     width: calc(100% - 80px);
+  //     height: calc(100% - 80px);
+  //     margin: 40px 0 0 40px;
+  //     background: rgba(239, 241, 244, 0.3);
+  //     border: 1px dashed rgba(216, 221, 228, 0.65);
+  //     border-radius: 4px;
+  //     .startBox {
+  //       display: flex;
+  //       align-items: center;
+  //       justify-content: center;
+  //       width: 100%;
+  //       margin-top: 2vh;
+  //       margin-left: -20px;
+  //       .startIconBox {
+  //         display: inline-block;
+  //         color: #434e59;
+  //         text-align: left;
+  //       }
+  //       .startIconBtn {
+  //         width: 88px;
+  //         height: 40px;
+  //         margin-left: 76px;
+  //       }
+  //       .startIcon {
+  //         margin-right: 5px;
+  //         vertical-align: sub;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // .buttonClass {
+  //   margin-right: 10px !important;
+  // }
+  // .disableCss {
+  //   color: rgba(0, 0, 0, 0.25);
+  //   cursor: no-drop;
+  // }
+  // .tabBox {
+  //   width: calc(100% - 20px);
+  //   height: calc(100vh - 338px);
+  //   margin: 20px 10px 0;
+  //   overflow: hidden;
+  //   background: #fff;
+  //   :global {
+  //     .ant-table-content {
+  //       height: calc(100vh - 355px);
+  //     }
+  //     .ant-pagination {
+  //       padding-right: 20px;
+  //     }
+  //     .ant-image-mask {
+  //       width: 58px;
+  //       height: 46px;
+  //     }
+  //     .ant-table-thead .ant-table-cell {
+  //       color: #333 !important;
+  //       font-weight: 600 !important;
+  //     }
+  //     .ant-table-body {
+  //       height: calc(100vh - 435px);
+  //       overflow-y: auto !important;
+  //       color: #666;
+  //     }
+  //     .ant-empty-normal {
+  //       display: flex;
+  //       flex-direction: column;
+  //       align-items: center;
+  //       justify-content: center;
+  //       height: calc(100vh - 455px);
+  //       margin: 0;
+  //     }
+  //     .ant-image {
+  //       display: block;
+  //       width: 58px;
+  //       height: 47px;
+  //       overflow: hidden;
+  //     }
+  //   }
+  // }
+  // .tabBox1 {
+  //   height: calc(100vh - 243px);
+  //   :global {
+  //     .ant-table-body {
+  //       height: calc(100vh - 346px);
+  //       color: #666;
+  //     }
+  //     .ant-table-content {
+  //       height: calc(100vh - 300px);
+  //     }
+  //     .ant-empty-normal {
+  //       height: calc(100vh - 400px);
+  //     }
+  //   }
+  // }
+  .topSelect {
+    height: 140px !important;
+    // margin: 10px 10px 20px;
+    // padding: 20px 10px 0 20px;
+    // background: #fff;
+    // border-radius: 4px;
+    // &::-webkit-scrollbar {
+    //   width: 6px;
+    //   height: 8px;
+    // }
+    // &::-webkit-scrollbar-thumb {
+    //   background: #c0c0c0;
+    //   border-radius: 10px;
+    //   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    //   &:hover {
+    //     background: #7c7c7c;
+    //   }
+    // }
+    .rowClass {
+      width: 100%;
+      margin-bottom: 20px;
+      .dateSel {
+        display: inline-block;
+        width: 68px;
+        height: 40px;
+        margin-right: 10px;
+        // margin: 0 10px;
+        // margin-left: 10px;
+        color: #0013c1;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+        &:first-child {
+          margin-left: 10px;
+        }
+        &:hover {
+          background: #e9ebff;
+        }
+      }
+      .btnLight {
+        background: #e9ebff;
+      }
+      .timeBox {
+        display: inline-flex;
+        width: calc(100% - 235px);
+      }
+    }
+    // :global {
+    //   .ant-select {
+    //     width: calc(100% - 80px);
+    //     height: 40px;
+    //     margin: 0 10px;
+    //     line-height: 40px;
+    //     .ant-select-selector {
+    //       height: 40px;
+    //       line-height: 40px;
+    //     }
+    //     .ant-select-selection-item {
+    //       height: 40px;
+    //       line-height: 40px;
+    //     }
+    //     .ant-select-selection-placeholder {
+    //       height: 40px;
+    //       line-height: 40px;
+    //     }
+    //   }
+
+    //   .ant-btn-primary {
+    //     margin: 0 10px 0 0;
+    //   }
+    //   .ant-picker {
+    //     width: 100%;
+    //     height: 40px;
+    //   }
+    //   .ant-picker.ant-picker-disabled {
+    //     &:hover {
+    //       border-color: #d9d9d9;
+    //     }
+    //   }
+    // }
+    .ipnBigBox2 {
+      display: inline-block;
+      width: calc(74% - 10px);
+      margin-right: 20px;
+    }
+
+    .inpBox {
+      display: inline-block;
+      width: calc((100% - 155px) / 3);
+      padding-left: 23px;
+      .comClass {
+        display: inline-block;
+        width: calc(100% - 80px);
+        height: 40px;
+        margin: 0 10px;
+        line-height: 40px;
+      }
+    }
+    .inpBoxTime {
+      width: calc((100% - 155px) / 3 + 155px);
+      padding-left: 0;
+    }
+    .inpBox6 {
+      display: inline-block;
+      width: calc((100% - 155px) / 3);
+      .comClass {
+        display: inline-flex;
+        width: calc(100% - 100px);
+        height: 40px;
+        margin: 0 5px;
+        line-height: 40px;
+        vertical-align: middle;
+      }
+      // margin-right: 10px;
+    }
+    .inpBox7 {
+      margin-right: 0;
+    }
+    .ipnBigBox8 {
+      width: 14%;
+    }
+
+    .timerBox {
+      display: inline-block;
+      width: calc(100% - 10px);
+      // margin: 20px 0;
+      // display: inline-block;
+
+      .btnLight {
+        background: #e9ebff;
+      }
+    }
+    .ipnBigBox1 {
+      display: inline-block;
+      width: calc(40% - 10px);
+      margin-right: 20px;
+    }
+    .ipnBigBox3 {
+      display: inline-block;
+      width: calc(45% - 10px);
+      margin-right: 20px;
+    }
+    .timerBox2 {
+      width: 100%;
+    }
+    .selBtnBox {
+      float: right;
+      &::after {
+        display: inline-block;
+        clear: both;
+        content: '';
+      }
+    }
+  }
+
+  .paths2 {
+    path {
+      opacity: 0.3 !important;
+      fill: #999 !important;
+    }
+  }
+  .paths {
+    path {
+      opacity: 0.3;
+      fill: #fff;
+    }
+  }
+  .disables {
+    .paths2;
+    &:hover {
+      cursor: not-allowed !important;
+      path {
+        opacity: 0.3 !important;
+        fill: #999 !important;
+      }
+    }
+  }
+  .iconBoxBtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  .iconBoxHover1 {
+    .paths;
+    &:hover {
+      path {
+        opacity: 0.5;
+        fill: #fff;
+      }
+    }
+  }
+  .iconBoxHover2 {
+    .paths;
+    &:hover {
+      path {
+        opacity: 0.5;
+        fill: #fff;
+      }
+    }
+  }
+
+  .topBoxText2 {
+    position: absolute;
+    top: 45%;
+    z-index: 999;
+    cursor: pointer;
+    .paths;
+    &:hover {
+      path {
+        opacity: 0.5;
+        fill: #fff;
+      }
+    }
+  }
+
+  .topBoxText3 {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    z-index: 999;
+    cursor: pointer;
+    .paths;
+    &:hover {
+      path {
+        opacity: 0.5;
+        fill: #fff;
+      }
+    }
+  }
+
+  .iconPosition1 {
+    position: absolute;
+    top: 45%;
+    left: -175px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  .iconPosition2 {
+    position: absolute;
+    top: 45%;
+    right: 35px;
+    z-index: 9999;
+    display: flex;
+    cursor: pointer;
+  }
+}

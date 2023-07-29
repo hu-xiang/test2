@@ -1,0 +1,202 @@
+/*
+ * @Author: wf
+ * @Date: 2022-07-06 16:12:17
+ * @Last Modified by: wf
+ * @description:   巡检看板表格和页码样式
+ * @Last Modified time: 2022-11-09 11:16:51
+ */
+.trdClass {
+  .ant-table-tbody > tr > td {
+    border-bottom: none;
+    & > span {
+      color: rgba(255, 255, 255, 0.7) !important;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+:global {
+  .emptyTableData {
+    .ant-table-thead > tr,
+    .ant-table-tbody > tr,
+    .ant-table-tbody > tr.ant-table-placeholder {
+      background-color: transparent !important;
+    }
+    .ant-table-tbody > tr.ant-table-placeholder:hover > td {
+      background-color: #171717 !important;
+    }
+  }
+}
+.tableClass {
+  .ant-table-body {
+    overflow-y: overlay !important;
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 34px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    .ant-radio-wrapper .ant-radio-inner {
+      background-color: #191919;
+    }
+    .ant-empty-normal {
+      margin: 0 !important;
+      color: rgba(255, 255, 255, 0.3) !important;
+    }
+
+    .ant-table-row {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .ant-table-cell {
+      padding: 6px 6px 6px 10px !important;
+      .ant-pro-field-index-column {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+    .ant-empty-image svg {
+      color: rgba(255, 255, 255, 1) !important;
+      opacity: 0.3;
+    }
+  }
+  .ant-table-placeholder {
+    .tableEmptyClass .tableEmptyImgClass {
+      width: 54% !important;
+      height: 80% !important;
+    }
+  }
+  .ant-table-cell-scrollbar {
+    display: none;
+  }
+}
+.tableStyle {
+  .ant-table-cell-fix-right {
+    background-color: #191919;
+  }
+  .ant-table-header .ant-table-thead > tr > .ant-table-cell:last-child::before {
+    background-color: transparent !important;
+  }
+  .ant-spin-container {
+    background-color: transparent;
+    &::after {
+      background-color: transparent;
+    }
+  }
+  .ant-table {
+    background: transparent;
+    border-radius: 4px;
+    .ant-table-thead > tr > th {
+      color: #777 !important;
+      font-size: 12px;
+      line-height: 20px;
+      background-color: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      .ant-table-column-sorter {
+        color: #666 !important;
+      }
+    }
+  }
+  .ant-table table {
+    border-radius: 4px;
+  }
+  .trdClass;
+  .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+    background-color: #454545 !important;
+  }
+  td.ant-table-column-sort {
+    background-color: #000;
+  }
+  .ant-table.ant-table-middle .ant-table-thead > tr > th {
+    padding: 11px 5px 10px !important;
+  }
+  .ant-table.ant-table-middle .ant-table-tbody > tr > td {
+    padding: 6px 10px 6px !important;
+  }
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-top-left-radius: 4px;
+  }
+  .ant-table.ant-table-middle {
+    font-size: 12px;
+  }
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-top-right-radius: 4px;
+  }
+  .ant-table-tbody > tr.ant-table-row:hover > td {
+    background-color: #3a3a3a;
+  }
+  .ant-table-tbody > tr.ant-table-placeholder:hover > td {
+    background: #333;
+  }
+  .ant-table-thead
+    > tr
+    > th:nth-last-child(2)
+    :not(.ant-table-selection-column)
+    :not(.ant-table-row-expand-icon-cell)
+    :not([colspan])
+    ::before {
+    background-color: transparent !important;
+  }
+  .ant-table-content {
+    color: rgba(255, 255, 255, 0.6);
+    &::-webkit-scrollbar-thumb {
+      background: #454545;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    .ant-table-thead
+      > tr
+      > th:not(:last-child)
+      :not(.ant-table-selection-column)
+      :not(.ant-table-row-expand-icon-cell)
+      :not([colspan])
+      ::before {
+      height: 10px;
+      background-color: transparent;
+    }
+  }
+
+  .ant-space {
+    display: block;
+  }
+}
+
+.tablePagination {
+  .ant-pagination {
+    margin-right: 20px;
+    white-space: nowrap;
+    .ant-pagination-prev .anticon-left svg {
+      color: rgba(255, 255, 255, 0.3);
+    }
+    .ant-pagination-next .anticon-right svg {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .ant-pagination-item {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: transparent;
+      border: none;
+      a {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+    .ant-pagination-item.ant-pagination-item-active {
+      color: rgba(55, 87, 254, 1);
+      a {
+        color: rgba(55, 87, 254, 1);
+      }
+    }
+    .ant-pagination-item-ellipsis {
+      color: rgba(255, 255, 255, 0.3);
+    }
+    .anticon {
+      color: rgba(255, 255, 255, 0.3);
+    }
+    .ant-pagination-disabled {
+      .anticon svg {
+        color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}

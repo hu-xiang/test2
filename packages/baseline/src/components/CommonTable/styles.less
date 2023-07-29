@@ -1,0 +1,84 @@
+.toggleIcon {
+  position: absolute;
+  top: 50%;
+  z-index: 1100;
+  cursor: pointer;
+}
+.arrLeftIcon {
+  left: 0;
+}
+.arrRightIcon {
+  right: 10%;
+}
+.arrIconDisabled {
+  cursor: no-drop;
+  path {
+    opacity: 0.3;
+    fill: #999;
+  }
+}
+.previewMask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 150;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.previewImg {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 160;
+  height: 100%;
+  transform: translateX(-50%);
+  :global {
+    .ant-image {
+      width: 100%;
+      height: 100%;
+    }
+    .ant-image-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.previewImgInner {
+  height: 100%;
+}
+.image-mask-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 46px;
+  cursor: pointer;
+  opacity: 0;
+  .image-mask-eye {
+    width: 16px;
+    height: 16px;
+    background: url('../../assets/icon/eye.svg') no-repeat center;
+    background-size: 16px 16px;
+  }
+  .image-mask-name {
+    margin-left: 3px;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+.image-container {
+  position: relative;
+  display: block;
+  width: 58px;
+  height: 46px;
+  &:hover {
+    .image-mask-container {
+      opacity: 1 !important;
+    }
+  }
+}

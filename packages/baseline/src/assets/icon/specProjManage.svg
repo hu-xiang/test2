@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 1H2C1.44772 1 1 1.44772 1 2V4M12 1H14C14.5523 1 15 1.44772 15 2V4M1 12V14C1 14.5523 1.44772 15 2 15H4M12 15H14C14.5523 15 15 14.5523 15 14V12" stroke="white" stroke-width="1.05"/>
+<path d="M6 4L4 12" stroke="white" stroke-opacity="0.9" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 4L12 12" stroke="white" stroke-opacity="0.9" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 4V12" stroke="white" stroke-opacity="0.9" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.1 2.1"/>
+</svg>

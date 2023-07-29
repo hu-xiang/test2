@@ -1,0 +1,120 @@
+@import '~antd/es/style/themes/default.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+:global {
+  .pwdreset {
+    .ant-switch-checked {
+      background: #36c626;
+    }
+  }
+}
+.bottomButton {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  :global {
+    .ant-btn.bottomCancelButton {
+      margin-right: 10px;
+      color: rgba(38, 49, 65, 1);
+      background: rgba(38, 49, 65, 0.1);
+      &:hover {
+        background: rgba(38, 49, 65, 0.1);
+        border-color: #0013c1;
+      }
+    }
+    .ant-btn.bottomOkButton {
+      color: #fff !important;
+      background-color: rgba(0, 19, 193, 1) !important;
+      &:hover {
+        color: #fff !important;
+        background: rgba(0, 19, 193, 1) !important;
+        border-color: #0013c1 !important;
+      }
+    }
+  }
+  &.centerButton {
+    justify-content: center;
+  }
+}
+
+.menu {
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    min-width: 160px;
+  }
+}
+
+.right {
+  display: flex;
+  float: right;
+  height: 48px;
+  margin-left: auto;
+  overflow: hidden;
+  .action {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    > span {
+      vertical-align: middle;
+    }
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+  .search {
+    padding: 0 12px;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .account {
+    .avatar {
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+
+.dark {
+  // .action {
+  .action:hover {
+    background: #252a3d;
+  }
+  .action:global(.opened) {
+    background: #252a3d;
+  }
+  // }
+}
+
+@media only screen and (max-width: @screen-md) {
+  :global(.ant-divider-vertical) {
+    vertical-align: unset;
+  }
+  .name {
+    display: none;
+  }
+  .right {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    .account {
+      .avatar {
+        margin-right: 0;
+      }
+    }
+    .search {
+      display: none;
+    }
+  }
+}

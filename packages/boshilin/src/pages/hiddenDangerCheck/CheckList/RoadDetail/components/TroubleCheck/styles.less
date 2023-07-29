@@ -1,0 +1,40 @@
+.TroubleCheck {
+  .TroubleCheckOperate {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    :global {
+      .ant-switch-checked {
+        background: #54a325 !important;
+      }
+    }
+
+    .switch {
+      margin-top: 9px;
+      margin-right: 20px;
+    }
+  }
+
+  .TroubleCheckLine {
+    width: 100%;
+    height: calc(100vh - 268px);
+    padding: 20px;
+    background: #fff;
+    .lineTitle {
+      margin-bottom: 30px;
+      color: #000;
+      font-size: 16px;
+    }
+    .line {
+      max-height: calc(100vh - 370px);
+      margin: 0 20px;
+    }
+    .customEmptyImg {
+      width: 100%;
+      min-height: 200px;
+      max-height: calc(100vh - 370px);
+    }
+  }
+}

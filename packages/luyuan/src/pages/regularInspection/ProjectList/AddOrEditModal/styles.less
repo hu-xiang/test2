@@ -1,0 +1,101 @@
+// .regularProjectModalBox .addButton {
+//   margin-bottom: 20px;
+//   :global {
+//     .ant-btn {
+//       width: 437px;
+//       height: 40px;
+//       margin-left: 31px;
+//       color: #0013c1;
+//       border: 1px dashed rgba(0, 19, 193, 0.4) !important;
+//       border-radius: 4px;
+
+//       .anticon {
+//         color: #0013c1;
+//         font-size: 11px;
+//       }
+//     }
+//   }
+// }
+
+.regularProjectModalBox {
+  .addButton {
+    :global {
+      .ant-btn {
+        width: 437px;
+        height: 40px;
+        margin-left: 31px;
+        color: #0013c1;
+        border: 1px dashed rgba(0, 19, 193, 0.4) !important;
+        border-radius: 4px;
+
+        .anticon {
+          color: #0013c1;
+          font-size: 11px;
+        }
+      }
+    }
+
+    margin-bottom: 20px;
+  }
+  .reportItemOuter {
+    :global {
+      .ant-form-item-explain {
+        margin-left: 30px !important;
+      }
+
+      .ant-form-item-has-error .ant-select-selector,
+      .ant-form-item-has-error .ant-input {
+        border-color: #d9d9d9 !important;
+      }
+
+      .ant-form-item-has-error :not(.ant-input-disabled):not(.ant-input-borderless).ant-input {
+        border-color: #d9d9d9 !important;
+      }
+
+      .ant-form-item-has-error
+        .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input)
+        .ant-select-selector {
+        background-color: #fff;
+        border-color: #d9d9d9 !important;
+      }
+
+      .ant-form-item-has-error :not(.ant-input-number-affix-wrapper-disabled) {
+        &:not(.ant-input-number-affix-wrapper-borderless).ant-input-number-affix-wrapper:hover {
+          background-color: #fff;
+          border-color: #d9d9d9 !important;
+        }
+      }
+
+      .ant-form-item-has-error
+        :not(.ant-input-disabled):not(.ant-input-borderless).ant-input:focus {
+        box-shadow: 0 0 0 0 !important;
+      }
+    }
+  }
+  .reportToUpload {
+    display: flex;
+    margin-top: 10px;
+    .leftIndex {
+      min-width: 20px;
+      margin: 0 0 0 10px;
+      color: #000;
+      line-height: 40px;
+    }
+
+    .rightRowContent {
+      display: inline-flex;
+      margin-bottom: 10px;
+
+      .rowHalfCol {
+        width: 214px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .reportItem {
+    display: 'block';
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,189 @@
+:global {
+  .crturoleipt.ant-modal .ant-select-selector {
+    height: 40px;
+  }
+
+  .crturoleipt.ant-modal {
+    width: 500px !important;
+
+    .ant-modal-content {
+      width: 500px;
+      margin: auto;
+      .ant-input {
+        height: 40px;
+      }
+
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .cutroleipt.ant-modal {
+    min-width: 1000px !important;
+    .site-tree-search-value {
+      // background: #F2F3FC;
+      color: #0013c1;
+    }
+    .ant-tree {
+      max-height: 392px;
+      overflow-y: auto;
+    }
+    .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+      background-color: #3345e7;
+      border-color: #3345e7 !important;
+    }
+    .ant-tree-checkbox:hover {
+      border-color: #3345e7 !important;
+    }
+
+    .ant-tree-checkbox-wrapper:hover .ant-tree-checkbox-inner,
+    .ant-tree-checkbox:hover .ant-tree-checkbox-inner,
+    .ant-tree-checkbox-input:focus + .ant-tree-checkbox-inner {
+      border-color: #0013c1;
+    }
+
+    .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner::after {
+      background-color: #3345e7;
+    }
+
+    .ant-checkbox:hover {
+      border-color: #3345e7 !important;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #3345e7;
+      border-color: #3345e7 !important;
+    }
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+    .ant-checkbox:hover .ant-checkbox-inner,
+    .ant-checkbox-input:focus + .ant-checkbox-inner {
+      border-color: #0013c1;
+    }
+
+    .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+      background-color: #3345e7;
+    }
+
+    .ant-modal-content {
+      min-width: 1000px;
+      margin: auto;
+      .ant-modal-footer {
+        text-align: right;
+      }
+      .ant-modal-body {
+        min-height: 482px;
+        padding: 0 24px;
+        .treetop {
+          padding: 24px 0;
+        }
+        .ant-table {
+          margin-top: 24px;
+        }
+      }
+    }
+
+    // .ant-table-body {
+    //   height: 374px;
+    //   overflow-y: auto !important;
+    // }
+    // .ant-table-placeholder {
+    //   height: 374px;
+    // }
+  }
+}
+
+#container {
+  height: 100%;
+  padding: 10px;
+  :global {
+    .usertable {
+      height: calc(100vh - 118px);
+      overflow: hidden;
+      .ant-pro-table {
+        height: 100%;
+      }
+
+      // .ant-table-thead {
+      //   color: #333;
+      // }
+      // .ant-table-thead > tr > th {
+      //   font-weight: bold;
+      // }
+      .ant-table.ant-table-middle .ant-table-title,
+      .ant-table.ant-table-middle .ant-table-footer,
+      .ant-table.ant-table-middle tfoot > tr > th,
+      .ant-table.ant-table-middle tfoot > tr > td,
+      .ant-table.ant-table-middle .ant-table-thead > tr > th,
+      .ant-table.ant-table-middle .ant-table-tbody > tr > td {
+        padding: 17px 8px 16px;
+      }
+      .ant-table-body {
+        height: calc(100vh - 218px);
+        overflow-y: auto !important;
+      }
+      // .ant-table-tbody {
+      //   color: #666;
+      // }
+      .ant-table-pagination.ant-pagination {
+        margin: 6px 0;
+        padding-right: 10px;
+      }
+      // .ant-empty-normal {
+      //   height: 561px;
+      //   line-height: 558px;
+      // }
+      .ant-table-content {
+        height: calc(100vh - 155px) !important; //与表格滚动条设置对应
+        //overflow-y: auto !important;
+      }
+      .ant-table-empty {
+        //无数据时调整滚动条位置
+        .ant-table-content {
+          height: calc(100vh - 120px) !important; //与表格滚动条设置对应
+        }
+      }
+      .ant-table-placeholder {
+        .ant-table-cell {
+          max-width: 1000px;
+          height: calc(100vh - 150px) !important; //比表格滚动条设置要小，不然无数据时也有滚动条
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .usertop {
+    height: 40px;
+    margin-bottom: 10px;
+    .usertoptxt {
+      display: inline-block;
+      margin-top: 5px;
+      color: #333;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .usertopsel {
+      float: right;
+      :global {
+        .usersel {
+          margin-right: 10px;
+          border-radius: 4px;
+        }
+        .usertopadd.ant-btn-primary {
+          height: 40px;
+          margin-right: 10px;
+          border-radius: 4px;
+        }
+        .ant-input-affix-wrapper {
+          height: 38px;
+        }
+        .ant-input-search-button {
+          height: 38px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

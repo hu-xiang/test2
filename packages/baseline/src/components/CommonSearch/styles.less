@@ -1,0 +1,73 @@
+.CommonSearch {
+  display: flex;
+  flex-flow: wrap;
+  width: calc(100% - 40px);
+  margin: 19px 20px;
+  padding: 0 0 20px 20px;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+
+  .searchItem {
+    :global {
+      .ant-input {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+
+    display: flex;
+    margin-top: 20px;
+
+    .searchLabel {
+      height: 40px;
+      line-height: 40px;
+      text-align: right;
+    }
+
+    .searchInput {
+      display: flex;
+      margin: 0 20px 0 12px;
+
+      .btnList {
+        display: flex;
+
+        .dateBtn {
+          width: 68px;
+          min-width: 42px;
+          height: 40px;
+          // margin-right: 10px;
+          color: #0013c1;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 4px;
+          cursor: pointer;
+
+          // &:first-child {
+          //   margin-left: 10px;
+          // }
+
+          &:last-child {
+            margin-right: 10px;
+          }
+
+          &:hover {
+            background: #e9ebff;
+          }
+        }
+
+        .btnLight {
+          background: #e9ebff;
+        }
+      }
+    }
+  }
+
+  .searchButton {
+    margin-top: 20px;
+    margin-left: -10px;
+    button:first-child {
+      margin-right: 10px;
+    }
+  }
+}

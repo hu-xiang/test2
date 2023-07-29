@@ -1,0 +1,536 @@
+.top-head-common {
+  margin: 0 20px 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+
+  .ant-select {
+    height: 40px;
+    line-height: 40px;
+
+    .ant-select-selector {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .ant-select-selection-item,
+    .ant-select-selection-placeholder {
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+}
+
+.common-table-body1 {
+  margin: 20px 20px 0 20px;
+  overflow: hidden;
+}
+
+.taskPageList {
+  .divider {
+    position: absolute;
+    top: 69px;
+    left: 20px;
+    width: calc(100% - 40px);
+    border-bottom: 1px solid #dcdfe6;
+  }
+
+  height: calc(100vh - 82px);
+
+  :global {
+    .ant-tabs > .ant-tabs-nav {
+      position: absolute;
+      top: 23px;
+      left: 160px;
+      display: flex;
+      flex: none;
+      align-items: center;
+      // color: #0013C1;
+    }
+
+    .ant-tabs-tab-btn {
+      &:hover {
+        color: #0013c1;
+      }
+    }
+
+    .ant-tabs-tab-disabled .ant-tabs-tab-btn {
+      &:hover {
+        color: rgba(0, 0, 0, 0.25) !important;
+      }
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #0013c1;
+    }
+
+    .ant-tabs-ink-bar {
+      background: #0013c1;
+    }
+
+    .ant-pro-card {
+      background: none;
+    }
+
+    .common-table-list;
+
+    .head-one-box {
+      height: 80px;
+      .top-head-common;
+
+      .ant-btn-primary {
+        margin: 0 10px 0 0;
+      }
+
+      .ant-select {
+        width: calc(100% - 80px);
+        margin: 0 10px;
+      }
+    }
+
+    .head-one-box-mpgs {
+      height: 140px;
+      .top-head-common;
+
+      .ant-btn-primary {
+        margin: 0 10px 0 0;
+      }
+
+      .ant-select {
+        width: calc(100% - 80px);
+        margin: 0 10px;
+      }
+    }
+
+    // 有操作按钮地图不展开样式
+    .noMpgs {
+      .page-table-oneLine-box {
+        width: calc(100% - 40px);
+        height: calc(100vh - 290px);
+
+        .common-table-body1;
+
+        .ant-table-content {
+          height: calc(100vh - 346px);
+        }
+
+        .ant-table-body {
+          height: calc(100vh - 404px);
+        }
+
+        .ant-empty-normal {
+          height: calc(100vh - 454px);
+        }
+      }
+
+      // 没有操作按钮地图不展开样式
+      .page-table-oneLine-box-nobutton {
+        width: calc(100% - 40px);
+        height: calc(100vh - 230px);
+
+        .common-table-body1;
+
+        .ant-table-content {
+          height: calc(100vh - 286px);
+        }
+
+        .ant-table-body {
+          height: calc(100vh - 344px);
+        }
+
+        .ant-empty-normal {
+          height: calc(100vh - 394px);
+        }
+      }
+    }
+
+    .mpgs {
+      .page-table-oneLine-box {
+        width: calc(100% - 40px);
+        height: calc(100vh - 350px);
+
+        .common-table-body1;
+
+        .ant-table-content {
+          height: calc(100vh - 406px);
+        }
+
+        .ant-table-body {
+          height: calc(100vh - 464px);
+        }
+
+        .ant-empty-normal {
+          height: calc(100vh - 514px);
+        }
+      }
+
+      // 没有操作按钮地图不展开样式
+      .page-table-oneLine-box-nobutton {
+        width: calc(100% - 40px);
+        height: calc(100vh - 290px);
+
+        .common-table-body1;
+
+        .ant-table-content {
+          height: calc(100vh - 346px);
+        }
+
+        .ant-table-body {
+          height: calc(100vh - 404px);
+        }
+
+        .ant-empty-normal {
+          height: calc(100vh - 454px);
+        }
+      }
+    }
+
+    @media screen and (min-width: 1500px) {
+      // 小屏有操作按钮地图展开样式
+      .noMpgs {
+        .page-table-map-box {
+          width: calc(100% - 40px);
+          height: calc(100vh - 585px);
+
+          .common-table-body1;
+
+          .ant-table-content {
+            height: calc(100vh - 641px);
+            overflow: auto scroll !important;
+          }
+
+          .ant-table-body {
+            height: calc(100vh - 699px) !important;
+          }
+
+          .ant-empty-normal {
+            height: calc(100vh - 749px);
+          }
+        }
+
+        // 大屏没有操作按钮地图展开样式
+        .page-table-map-box-nobutton {
+          width: calc(100% - 40px);
+          height: calc(100vh - 525px);
+
+          .common-table-body1;
+
+          .ant-table-content {
+            height: calc(100vh - 581px);
+            overflow: auto scroll !important;
+          }
+
+          .ant-table-body {
+            height: calc(100vh - 639px) !important;
+          }
+
+          .ant-empty-normal {
+            height: calc(100vh - 689px);
+          }
+        }
+      }
+
+      .mpgs {
+        .page-table-map-box {
+          width: calc(100% - 40px);
+          height: calc(100vh - 645px);
+
+          .common-table-body1;
+
+          .ant-table-content {
+            height: calc(100vh - 701px);
+            overflow: auto scroll !important;
+          }
+
+          .ant-table-body {
+            height: calc(100vh - 759px) !important;
+          }
+
+          .ant-empty-normal {
+            height: calc(100vh - 809px);
+          }
+        }
+
+        // 大屏没有操作按钮地图展开样式
+        .page-table-map-box-nobutton {
+          width: calc(100% - 40px);
+          height: calc(100vh - 585px);
+
+          .common-table-body1;
+
+          .ant-table-content {
+            height: calc(100vh - 641px);
+            overflow: auto scroll !important;
+          }
+
+          .ant-table-body {
+            height: calc(100vh - 699px) !important;
+          }
+
+          .ant-empty-normal {
+            height: calc(100vh - 749px);
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1500px) {
+      // 小屏有操作按钮地图展开样式
+      .noMpgs {
+        .page-table-map-box {
+          width: calc(100% - 40px);
+          height: calc(100vh - 460px);
+
+          .common-table-body1;
+
+          .ant-table-content {
+            height: calc(100vh - 516px);
+            overflow: auto scroll !important;
+          }
+
+          .ant-table-body {
+            height: calc(100vh - 574px);
+          }
+
+          .ant-empty-normal {
+            height: calc(100vh - 624px);
+          }
+        }
+
+        // 小屏没有操作按钮地图展开样式
+        .page-table-map-box-nobutton {
+          width: calc(100% - 40px);
+          height: calc(100vh - 400px);
+
+          .common-table-body1;
+
+          .ant-table-content {
+            height: calc(100vh - 456px);
+            overflow: auto scroll !important;
+          }
+
+          .ant-table-body {
+            height: calc(100vh - 514px);
+          }
+
+          .ant-empty-normal {
+            height: calc(100vh - 564px);
+          }
+        }
+      }
+
+      .mpgs {
+        .page-table-map-box {
+          width: calc(100% - 40px);
+          height: calc(100vh - 520px);
+
+          .common-table-body1;
+
+          .ant-table-content {
+            height: calc(100vh - 576px);
+            overflow: auto scroll !important;
+          }
+
+          .ant-table-body {
+            height: calc(100vh - 634px);
+          }
+
+          .ant-empty-normal {
+            height: calc(100vh - 684px);
+          }
+        }
+
+        // 小屏没有操作按钮地图展开样式
+        .page-table-map-box-nobutton {
+          width: calc(100% - 40px);
+          height: calc(100vh - 460px);
+
+          .common-table-body1;
+
+          .ant-table-content {
+            height: calc(100vh - 516px);
+            overflow: auto scroll !important;
+          }
+
+          .ant-table-body {
+            height: calc(100vh - 574px);
+          }
+
+          .ant-empty-normal {
+            height: calc(100vh - 634px);
+          }
+        }
+      }
+    }
+  }
+
+  .mapContainer {
+    margin-top: -5px;
+  }
+}
+
+// 列表查询界面--表格公共样式
+.common-table-list {
+  color: #666;
+
+  .ant-btn {
+    height: 40px;
+  }
+}
+
+#taskDetail {
+  .disableCss {
+    color: rgba(0, 0, 0, 0.25);
+    cursor: no-drop;
+  }
+
+  .taskBack {
+    display: flex;
+    width: 110px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+
+    .backText {
+      padding-left: 10px;
+      color: #263141 !important;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+
+  .topSelect {
+    .rowClass {
+      display: flex;
+      width: 100%;
+    }
+
+    .inpBox {
+      display: inline-block;
+      width: calc(100% / 4);
+
+      .comClass {
+        display: inline-block;
+        width: calc(100% - 80px);
+        height: 40px;
+        margin: 0 10px;
+        line-height: 40px;
+      }
+    }
+
+    .timerBox {
+      display: inline-block;
+      width: calc(50% - 150px);
+
+      .timeBox {
+        display: inline-block;
+        width: calc(100% - 240px);
+
+        // min-width: 215px;
+        :global {
+          .ant-picker {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .dateSel {
+        display: inline-block;
+        width: 48px;
+        height: 40px;
+        margin-right: 10px;
+        color: #0013c1;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:first-child {
+          margin-left: 10px;
+        }
+
+        &:hover {
+          background: #e9ebff;
+        }
+      }
+
+      .btnLight {
+        background: #e9ebff;
+      }
+    }
+
+    .selBtnBox {
+      display: inline-flex;
+
+      &::after {
+        display: inline-block;
+        clear: both;
+        content: '';
+      }
+    }
+  }
+
+  @media screen and (min-width: 1500px) {
+    .pullup {
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 328px);
+    }
+
+    .pullupMap {
+      position: absolute;
+      bottom: 298px;
+      left: calc(50% - 328px);
+    }
+
+    .pullupContent {
+      position: absolute;
+      bottom: 8px;
+      left: calc(50% - 35px);
+      display: inline-flex;
+      justify-content: flex-start;
+      line-height: 16px;
+    }
+
+    .pullupContentMap {
+      position: absolute;
+      bottom: 306px;
+      left: calc(50% - 35px);
+      display: inline-flex;
+      justify-content: flex-start;
+      line-height: 16px;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    .pullup {
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 328px);
+    }
+
+    .pullupMap {
+      position: absolute;
+      bottom: 173px;
+      left: calc(50% - 328px);
+    }
+
+    .pullupContent {
+      position: absolute;
+      bottom: 8px;
+      left: calc(50% - 30px);
+      display: inline-flex;
+      justify-content: flex-start;
+      line-height: 16px;
+    }
+
+    .pullupContentMap {
+      position: absolute;
+      bottom: 181px;
+      left: calc(50% - 30px);
+      display: inline-flex;
+      justify-content: flex-start;
+      line-height: 16px;
+    }
+  }
+}

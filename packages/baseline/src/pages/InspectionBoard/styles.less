@@ -1,0 +1,1211 @@
+@import './style/dateRangeStyle.less';
+@import './style/selectStyle.less';
+@import './style/tableStyle.less';
+
+.flex-row-class {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.flex-column-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftTopClass {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 24px;
+  img,
+  span {
+    display: block;
+  }
+  .logo {
+    height: 40px;
+    margin-right: 6px;
+  }
+}
+
+.margin24 {
+  & > span {
+    min-width: 24px;
+  }
+}
+.margin10 {
+  & > span {
+    margin-right: 20px;
+    &:first-child {
+      margin-right: 10px;
+    }
+    // &:last-child {
+    //   margin-right: 40px;
+    // }
+  }
+}
+
+:global {
+  .tableTitleRow {
+    display: flex;
+    align-items: center;
+  }
+  .modalSpecDiv {
+    position: relative;
+    top: 104px;
+    display: block;
+    width: 483px;
+    height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    .ant-modal-root {
+      position: relative;
+    }
+    .ant-modal-wrap {
+      top: 100px;
+      width: 526px;
+      height: 294px;
+      margin: 0 auto;
+      overflow: hidden;
+      .ant-modal {
+        top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .amap-marker-label {
+    background-color: transparent;
+    border: none;
+  }
+  .amap-info-content {
+    padding: 0 10px 10px;
+  }
+
+  .map-big-img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .rowTdClass {
+    .flex-row-class;
+    .tableCollapseTxt {
+      width: 60px;
+    }
+    .weekRadioClass {
+      margin-right: 6px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .weekRadioImgClass {
+      position: relative;
+      bottom: 2px;
+    }
+  }
+}
+
+.diseaseEmpty {
+  .flex-column-class;
+
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  min-height: 755px;
+  overflow: hidden;
+}
+
+.mapContain {
+  user-select: none;
+}
+.inspectPanelClass {
+  position: relative;
+  width: 100%;
+  height: 100vh !important;
+  min-height: 852px;
+  overflow: hidden;
+  .middleContainer {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    min-height: 798px;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #454545;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.leftPanel {
+  position: absolute;
+  top: 104px;
+  bottom: 0;
+  left: 10px;
+  z-index: 2;
+  width: 19.7vw;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  .btnLight {
+    color: #fff;
+    background: #0013c1;
+  }
+  .card-facility-road {
+    height: 31.2% !important;
+  }
+  .card-facility-distribution {
+    height: 28.1% !important;
+    .card-faclity-nums {
+      height: calc(100% - 41px);
+    }
+  }
+  .card-facilty-table {
+    height: 38.4% !important;
+  }
+}
+.cardDiseaseStatics {
+  height: 40.8% !important;
+}
+.cardDiseaseCount {
+  height: 29.2% !important;
+}
+.cardDiseaseDis {
+  height: 26.9% !important;
+  .pieDiseaseDisBox {
+    height: calc(100% - 10px) !important;
+  }
+}
+.bottom {
+  position: absolute;
+  bottom: 30px;
+  left: 28vw;
+  z-index: 100;
+  width: calc(68vw - 700px);
+  min-width: 480px;
+  :global {
+    .ant-slider-mark-text {
+      color: #fff;
+    }
+    .ant-slider-handle,
+    .ant-slider-dot {
+      top: -8px;
+      width: 20px;
+      height: 20px;
+      background: #21225c;
+      border: 1px solid #3757ff;
+    }
+    .ant-slider-handle {
+      top: 1px;
+      margin-left: 6px;
+      &::before {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 12px;
+        height: 12px;
+        background: #3757ff;
+        border-radius: 100%;
+        content: '.';
+      }
+    }
+    .ant-slider-rail,
+    .ant-slider-track {
+      height: 1px;
+      opacity: 0.3;
+    }
+  }
+}
+.plotsBox100 {
+  .plotsBox {
+    height: 100% !important;
+  }
+}
+.road-level-distribution {
+  height: 470px !important;
+  :global {
+    .ant-modal-body {
+      height: 343px !important;
+    }
+  }
+}
+.chartModalClass {
+  height: 550px;
+  .modalChartCommonClass {
+    height: inherit;
+    .secondRowClass {
+      .modalCardTitleRight {
+        .flex-row-class;
+
+        justify-content: flex-end;
+        height: 32px;
+        margin-right: 10px;
+        .liCommanClass;
+      }
+    }
+    .mileageLineClass {
+      height: calc(100% - 42px);
+    }
+    .mile-bar {
+      height: 100%;
+    }
+    .pieDisClass {
+      .flex-row-class;
+
+      height: 100% !important;
+      .pieDisCardClass {
+        flex: 1;
+        height: 100%;
+        .pieDisCardLeftClass {
+          .flex-row-class;
+
+          justify-content: flex-start;
+          color: rgba(255, 255, 255, 0.8);
+          .pieDisCardLeftClass {
+            .titleCommonImg;
+          }
+        }
+        .card-item-head {
+          .flex-row-class;
+
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 44px;
+          .icon-txt {
+            .titleCommonImg;
+          }
+        }
+        .plotsBox {
+          height: calc(100% - 32px) !important;
+        }
+      }
+    }
+    .pieDisClass.leftPieDisClass {
+      height: calc(100% - 42px) !important;
+    }
+  }
+  :global {
+    .ant-modal-header {
+      background: none;
+      border: none !important;
+      .ant-modal-title {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .ant-modal-content {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
+      backdrop-filter: blur(30px);
+      .ant-modal-close-x {
+        color: rgba(255, 255, 255, 0.9);
+      }
+      .ant-modal-body {
+        height: 494px;
+        padding: 0 20px;
+        .chartModalCard;
+      }
+    }
+  }
+  &.leftPieModalClass {
+    width: 87.7vw !important;
+    max-width: 1684px;
+  }
+}
+
+.rightBottomCard {
+  :global {
+    .ant-card-body {
+      height: 100%;
+      padding: 0 1vw !important;
+    }
+  }
+}
+.antd-card-chart-modal {
+  .ant-card-body {
+    height: 100% !important;
+    padding: 0 !important;
+  }
+}
+.chartModalCard {
+  .ant-card {
+    background: none;
+  }
+  .antd-card-chart-modal;
+  .ant-card-bordered {
+    border: none !important;
+  }
+}
+.titleCommonImg {
+  width: 6px;
+  height: 6px;
+  margin-right: 6.34px;
+  background: #3758ff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transform: rotate(-45deg);
+}
+.pieEmpty {
+  .flex-column-class;
+
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  img {
+    width: 54% !important;
+    height: 80% !important;
+  }
+}
+
+.ant-item-list-img {
+  img {
+    border-radius: 6px;
+  }
+}
+.panelClass {
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  :global {
+    .ant-card {
+      height: 40%;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      .ant-select {
+        position: absolute;
+        right: 0;
+        z-index: 999;
+        width: 140px;
+        height: 24px !important;
+      }
+      .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+        height: 24px !important;
+        line-height: 24px !important;
+      }
+      .ant-select-single .ant-select-selector .ant-select-selection-item,
+      .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+        line-height: 24px !important;
+      }
+      &:not(:first-child) {
+        margin-top: 0.83vh !important;
+      }
+    }
+  }
+  .bottomPage {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding-right: 20px;
+    white-space: nowrap;
+    :global {
+      .tablePagination;
+    }
+  }
+  .commonlist {
+    height: calc(100% - 30px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 34px;
+    }
+  }
+  .diseaseInfoClass {
+    height: calc(100% - 46px);
+    .itemInfoClass {
+      display: block;
+      width: calc(100% - 10px);
+      overflow: hidden;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      line-height: 24px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .listDiseaseInfo {
+      width: calc(100% - 123px);
+    }
+    .diseaseInfoList {
+      .commonlist;
+
+      height: calc(100% - 40px);
+      // :global{
+      //   .ant-list-item-meta{
+      //     .ant-image-mask{
+      //       width: inherit;
+      //       height: inherit;
+      //     }
+      //   }
+      // }
+    }
+
+    :global {
+      .ant-list-items {
+        .ant-list-item {
+          margin-bottom: 10px;
+          padding: 0;
+          background: rgba(147, 151, 174, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          backdrop-filter: blur(30px);
+          &:hover {
+            border: 1px solid #3758ff;
+          }
+          &:first-of-type {
+            margin-top: 10px;
+          }
+        }
+
+        .ant-list-item-meta {
+          padding: 10px;
+          .ant-list-item-meta-avatar {
+            margin-right: 0;
+            border: 0.5px solid rgba(255, 255, 255, 0.5);
+            border-radius: 6px;
+          }
+          .ant-image {
+            .ant-item-list-img;
+          }
+          .ant-image-mask {
+            width: inherit;
+            height: inherit;
+          }
+        }
+      }
+      // .tablePagination;
+    }
+  }
+  .cardBcg {
+    background-color: transparent;
+    border: none !important;
+    .cardCommonTitle;
+    .chart-card-pie,
+    .chartCommonClass {
+      height: calc(100% - 24px) !important;
+    }
+    .chart-first-row {
+      height: calc(100% - 47px) !important;
+    }
+    .fac-table {
+      height: calc(100% - 24px) !important;
+    }
+    .cardDiseaseCommon {
+      height: calc(100% - 47px) !important;
+      .cardDiseaseCarList {
+        .commonlist;
+      }
+    }
+    .chartFacilityClass {
+      height: calc(100% - 31px) !important;
+    }
+
+    .chartFirstCommonClass {
+      height: calc(100% - 71px) !important;
+    }
+    .chart-mile-class {
+      height: 73.2% !important;
+    }
+    :global {
+      .ant-card-body {
+        height: 100%;
+        padding: 0 1vw 1px 1vw !important;
+      }
+    }
+  }
+  .plotsBox100;
+  .cardCar {
+    height: 37.5%;
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 12px;
+    backdrop-filter: blur(30px);
+  }
+
+  .viewDetailTableClass {
+    height: 100% !important;
+    :global {
+      .ant-card {
+        height: 100%;
+        margin: 0;
+        background-color: transparent;
+        box-shadow: none;
+        .ant-card-body {
+          padding: 0 !important;
+        }
+      }
+      .ant-pro-card {
+        background-color: transparent;
+      }
+      .tableStyle;
+      .tableClass;
+    }
+  }
+  .viewDetailTableClass.carTableClass {
+    :global {
+      .ant-table-tbody > tr > td > span.darkColor {
+        color: rgba(255, 255, 255, 0.4) !important;
+        .ant-typography {
+          color: rgba(255, 255, 255, 0.4) !important;
+        }
+      }
+      .ant-table-tbody > tr > td > span.lightColor {
+        color: rgba(255, 255, 255, 0.8) !important;
+        .ant-typography {
+          color: rgba(255, 255, 255, 0.8) !important;
+        }
+      }
+    }
+  }
+}
+.commonhighlight {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  display: block;
+  width: 6px;
+  height: 1px;
+  background: #fff;
+}
+.rightCardHead {
+  .rightFirstTitle {
+    .flex-row-class;
+
+    position: relative;
+    justify-content: flex-start;
+    height: 46px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    .firstTitleImg {
+      .titleCommonImg;
+    }
+    .titleTxt {
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .highlight {
+      .commonhighlight;
+    }
+  }
+}
+.bcg-common {
+  background: rgba(147, 151, 174, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(30px);
+}
+.yearmile-statics-class {
+  .flex-column-class;
+
+  height: 25%;
+  margin-top: 0.83vh;
+  margin-bottom: 0.83vh;
+
+  .bcg-common;
+}
+.common-bar {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  content: '';
+}
+.disease-statics-class {
+  position: relative;
+  flex: 1;
+  margin-top: 0.83vh;
+
+  &::before {
+    .common-bar;
+
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #3757ff;
+    border-left: 2px solid #3757ff;
+  }
+  &::after {
+    .common-bar;
+
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid #3757ff;
+    border-bottom: 2px solid #3757ff;
+  }
+}
+
+.disease-bcgimg-class {
+  .flex-column-class;
+
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/img/InspectionBoard/rightDisease.png') no-repeat;
+  background-size: cover;
+  &::before {
+    .common-bar;
+
+    top: 0;
+    left: 0;
+    border-top: 2px solid #3757ff;
+    border-left: 2px solid #3757ff;
+  }
+  &::after {
+    .common-bar;
+
+    top: 0;
+    right: 0;
+    border-top: 2px solid #3757ff;
+    border-right: 2px solid #3757ff;
+  }
+}
+.statics-num-txt {
+  position: relative;
+  color: #a0bcd8;
+  font-size: 36px;
+  font-family: 'Bebas-Neue', Arial, sans-serif;
+  line-height: 39px;
+}
+.statics-Name-txt {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 12px;
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 29px;
+}
+.disease-Name-txt {
+  .statics-Name-txt;
+
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.disease-num-txt {
+  .statics-num-txt;
+
+  font-size: 50px;
+  // line-height: 55px;
+}
+.cardCommonTitle {
+  .cardTitle {
+    .flex-row-class;
+
+    position: relative;
+    justify-content: space-between;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    .cardTxtName {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .cardTitleleft {
+      .flex-row-class;
+
+      justify-content: flex-start;
+      width: 70%;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+
+      .titleLeftImg {
+        width: 6px;
+        height: 6px;
+        margin-right: 5px;
+        margin-right: 6.34px;
+        background: #3758ff;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        transform: rotate(-45deg);
+      }
+      &.width-limit {
+        width: fit-content;
+      }
+    }
+    .card-title-right-txt {
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    .cardTitleRight {
+      display: inline-flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: flex-end;
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      .liCommanClass;
+    }
+    .highlight {
+      .commonhighlight;
+    }
+  }
+  .cardSecondTitle {
+    height: 24px !important;
+  }
+  .card-second-border-title {
+    height: 31px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    .highlight {
+      .commonhighlight;
+    }
+  }
+  .cardHeight {
+    height: 47px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .cardTitleleftImg {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .cardRightTitle {
+    height: 31px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  }
+  .cardFirstTitle {
+    height: 46px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .firstChartRow {
+    .flex-row-class;
+
+    .colorBlack {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .name-second-title {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .txt-name {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    // margin-top: 0.581vh;
+    .colorLight {
+      .colorBlack;
+
+      .txt-name;
+    }
+    .card-name-light-color {
+      .colorLight;
+
+      // .txt-name;
+    }
+    .card-normal-color {
+      color: rgba(255, 255, 255, 0.8);
+
+      .txt-name;
+    }
+    .leftImg {
+      display: inline-block;
+      margin-right: 5px;
+      margin-left: 5px;
+      .titleCommonImg;
+    }
+  }
+}
+.rightPanelClass {
+  position: absolute;
+  top: 104px;
+  right: 10px;
+  bottom: 0;
+  z-index: 2;
+  width: 19.7vw;
+  min-height: 645px;
+  margin-bottom: 10px;
+  .rightCardHead;
+  .rightPadTitle {
+    height: 31px !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+  .rightBottomTitle {
+    height: 36px !important;
+    padding: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .rightTransPanel {
+    background: transparent;
+  }
+  .commanBoard {
+    position: absolute !important;
+    right: 0;
+    z-index: 2;
+    width: 19.7vw;
+  }
+  .rightPanel {
+    width: 100%;
+    height: 77.8%;
+    .rightFirstCard {
+      display: flex;
+      flex-direction: column;
+      height: 42.2%;
+      min-height: 125px;
+      padding: 0 1vw;
+      .content-first-box {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 47px);
+      }
+      .staticsClass {
+        display: flex;
+        flex-flow: row nowrap;
+        height: calc(100% - 56px);
+        margin-top: 0.83vh;
+        .staticsNameClass {
+          padding: 0;
+          &.mar-bt-6 {
+            display: block;
+            margin-bottom: 6px;
+          }
+        }
+        .staticsNumClass {
+          .statics-num-txt;
+        }
+        .staticsCardClass {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          justify-content: center;
+          box-sizing: border-box;
+          max-width: 49.5%;
+          padding: 0 0.5vw;
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          // border: 1px solid yellow !important;
+          background: rgba(147, 151, 174, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          backdrop-filter: blur(30px);
+
+          .staticsBottomClass {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .radioClass {
+              position: relative;
+              top: 5px;
+              display: flex;
+              flex-flow: row nowrap;
+              align-items: center;
+              box-sizing: border-box;
+              height: 27px;
+              padding: 0 10px;
+              background: rgba(220, 66, 57, 0.2);
+              border: 1px solid #dc4239;
+              border-radius: 51px;
+            }
+          }
+        }
+        .img-statics-box {
+          width: calc((100% - 10px) / 2);
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          // border: 1px solid yellow !important;
+          // background: rgba(147, 151, 174, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          &.bg-left {
+            background: url('../../assets/img/InspectionBoard/bg-left.png') no-repeat;
+            background-size: 100% 100%;
+            border: none;
+            // backdrop-filter: blur(0);
+          }
+          &.bg-right {
+            background: url('../../assets/img/InspectionBoard/bg-car.png') no-repeat;
+            background-size: 100% 100%;
+            border: none;
+            // backdrop-filter: blur(0);
+          }
+          .box-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding-left: 10px;
+            // background: url('../../assets/img/InspectionBoard/bg-lc.svg') no-repeat;
+            background-size: 100% 100%;
+            border: none;
+          }
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+        & > .staticsCardClass:first-child {
+          margin-right: 10px;
+        }
+        &.desc-class {
+          // flex: 1 1 45.5%;
+          height: 98px;
+          margin-top: 10px;
+          padding: 0;
+
+          // max-width: 50%;
+        }
+      }
+      &.right-top-card {
+        height: 28%;
+        min-height: 168px;
+      }
+    }
+
+    .cardFacility {
+      height: 36.7% !important;
+      .pieFacilityBox {
+        height: 100% !important;
+      }
+    }
+    .card-road-facility {
+      height: 34.3% !important;
+    }
+    .card-scene-statics {
+      height: calc(34.3% + 20px) !important;
+    }
+    .cardRoad {
+      height: 53.6% !important;
+      .mileageLineBox {
+        height: 100% !important;
+      }
+      .mile-box {
+        height: calc(100% - 31px) !important;
+      }
+    }
+    .card-mile-statics {
+      height: 31.7% !important;
+    }
+  }
+  .right-new-bottom-class {
+    .commanBoard;
+
+    bottom: 0;
+    height: 191px;
+    background: rgba(0, 0, 0, 0.35) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    backdrop-filter: blur(10px) !important;
+    .card-bottom-title {
+      .flex-row-class;
+
+      position: relative;
+      height: 36px !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+      .titleTxt {
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+      }
+      .highlight {
+        .commonhighlight;
+      }
+    }
+    .rightBottomCard;
+    // :global {
+    //   .ant-card-body {
+    //     height: 100%;
+    //     padding: 0 1vw;
+    //   }
+    // }
+  }
+  .rightBottomClass {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 21%;
+    margin-top: 10px;
+    border: none;
+    .rightBottomCard;
+    .rightBgPanel;
+    .legend-panel-box,
+    .legendPanelClass {
+      height: calc(100% - 36px) !important;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 8px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+.rightBgPanel {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+.rightPanelClass.fullScreenBottomH {
+  top: auto;
+  bottom: 0;
+  height: 190px;
+  min-height: 190px;
+  margin-top: 0;
+  .rightBottomClass {
+    height: 190px;
+    margin-top: 0;
+  }
+}
+.selTreeBox {
+  border-bottom: 1px solid rgba(220, 223, 230, 0.9);
+  .selTreeAllOrNull {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: #0013c1;
+    }
+  }
+  .lightSelTree {
+    color: #0013c1;
+  }
+}
+
+.liCommanClass {
+  .liClass {
+    display: inline-block;
+    flex: 1;
+    width: 2.08vw;
+    max-width: 60px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    background: rgba(147, 151, 174, 0.2);
+    border-radius: 37px;
+    cursor: pointer;
+    backdrop-filter: blur(30px);
+    .margin24;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  .liClass.activeClass {
+    box-sizing: border-box;
+    background: rgba(147, 151, 174, 0.2);
+    border: 1px solid #3758ff;
+    border-radius: 37px;
+    backdrop-filter: blur(30px);
+  }
+}
+
+.headClass {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  left: 20px;
+  z-index: 2;
+
+  .flex-row-class;
+
+  justify-content: space-between;
+  height: 104px;
+
+  .headRightClass {
+    .flex-row-class;
+
+    justify-content: flex-end;
+    .margin10;
+    .topHeadSpan {
+      display: inline-flex;
+    }
+    .topSpanTime {
+      display: inline-block;
+      width: 13.5vw;
+      max-width: 260px;
+      cursor: pointer;
+      :global {
+        .timeTicker;
+      }
+    }
+    .topSpanUserClass {
+      height: 40px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+}
+.headLeftClass {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1700px) {
+  .cardBcg {
+    .cardTitleleft {
+      width: 70% !important;
+    }
+    .firstChartRow {
+      width: 60%;
+    }
+    .cardTitleRight {
+      width: 37.4% !important;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .cardBcg {
+    .cardTitleleft {
+      width: 50% !important;
+      font-size: 14px !important;
+    }
+    .cardTitleRight {
+      width: 50% !important;
+    }
+  }
+}
+@media screen and (max-width: 1367px) {
+  .staticsClass {
+    .staticsNumClass {
+      font-size: 30px !important;
+    }
+  }
+}
+@media screen and (min-width: 1367px) and (max-width: 1624px) {
+  :global {
+    .staticsRightLiCheng {
+      width: 100% !important;
+    }
+  }
+}
+
+.cardDiseaseInfo {
+  height: 60% !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 12px;
+  backdrop-filter: blur(30px);
+}
+.fullBg {
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(30px) !important;
+}

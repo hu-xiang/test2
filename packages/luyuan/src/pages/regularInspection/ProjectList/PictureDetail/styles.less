@@ -1,0 +1,32 @@
+.tableContent {
+  :global {
+    .ant-table-tbody > tr > td {
+      border-bottom: none !important;
+      transition: background 0.3s;
+    }
+  }
+}
+.searchBox {
+  display: inline-flex;
+  margin-bottom: 20px;
+  .searchLeft {
+    display: inline-flex;
+    width: 368px;
+    margin-right: 20px;
+    .labelTitle {
+      width: 100px;
+      line-height: 40px;
+    }
+  }
+  .searchRight {
+    :global {
+      .ant-input {
+        height: 38px !important;
+      }
+    }
+    .inputSearch {
+      width: 280px;
+      border-radius: 4px;
+    }
+  }
+}

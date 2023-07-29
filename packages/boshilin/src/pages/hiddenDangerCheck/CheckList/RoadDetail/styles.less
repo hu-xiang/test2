@@ -1,0 +1,96 @@
+.detailHeader {
+  width: calc(100% - 40px);
+  height: 86px;
+  margin: 36px 20px 0 20px;
+  background: #fff;
+  .headerRow {
+    display: flex;
+    padding-top: 10px;
+    :global {
+      .ant-select {
+        width: 160px;
+        height: 32px !important;
+        line-height: 32px !important;
+      }
+
+      .ant-select-selector {
+        height: 32px !important;
+        background: rgba(0, 19, 193, 0.05);
+        border: none;
+        border-radius: 16px !important;
+
+        .ant-select-selection-item {
+          height: 32px;
+          line-height: 32px !important;
+        }
+
+        .ant-select-selection-placeholder {
+          line-height: 32px !important;
+        }
+      }
+
+      .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        height: 32px !important;
+        line-height: 32px !important;
+
+        .ant-select-selection-search-input {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .headerBack {
+    display: flex;
+    width: 105px;
+    margin-right: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    .backText {
+      margin-left: 8px;
+      color: #263141 !important;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+  .headerTabs {
+    :global {
+      .ant-tabs-nav {
+        margin-bottom: 18px;
+        margin-left: 20px;
+      }
+      .ant-tabs-tab-btn {
+        &:hover {
+          color: #0013c1;
+        }
+      }
+
+      .ant-tabs-tab-disabled .ant-tabs-tab-btn {
+        &:hover {
+          color: rgba(0, 0, 0, 0.25) !important;
+        }
+      }
+
+      .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #0013c1;
+      }
+
+      .ant-tabs-ink-bar {
+        background: #0013c1;
+      }
+    }
+
+    .tabContent {
+      height: calc(100vh - 208px);
+      padding: 20px;
+      background: #fff;
+    }
+    .sublineContentTab,
+    .sceneContentTab {
+      padding: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: rgb(240 242 245);
+    }
+  }
+}

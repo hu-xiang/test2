@@ -1,0 +1,150 @@
+:global {
+  .tenantMClass {
+    .ant-space-horizontal {
+      display: none;
+    }
+  }
+  .ant-tabs-extra-content {
+    .ant-btn {
+      height: 32px;
+    }
+  }
+}
+
+.tenantContainer {
+  .topHead {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    .leftRow {
+      width: calc(100% - 156px);
+      margin-right: 10px;
+    }
+    .rightBtnBox {
+      display: inline-flex;
+      justify-content: flex-end;
+      width: 156px;
+      button {
+        flex: 43.5%;
+        height: 40px;
+      }
+      & > button:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.tenantModalClass {
+  .tenantPageClass {
+    .infoTitle {
+      color: #000;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .commonContent {
+      padding: 10px 0;
+      .rowFormClass {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        :global {
+          .ant-form-item {
+            width: 50%;
+            .ant-form-item-control {
+              padding-right: 20px;
+            }
+            // .ant-form-item-control-input {
+            //   height: 40px;
+            // }
+            .ant-picker {
+              display: block;
+              width: inherit;
+              // height: 40px;
+              margin-left: 18px;
+              line-height: 28px;
+            }
+            // .ant-input-affix-wrapper {
+            //   height: 40px;
+            //   line-height: 40px;
+            // }
+            .ant-select {
+              // height: 40px;
+              .ant-select-selector {
+                align-items: center;
+                // height: 40px;
+                // line-height: 40px;
+              }
+            }
+            // .ant-form-item-label > label {
+            //   height: 40px;
+            // }
+          }
+          .timeClass {
+            .ant-form-item-label {
+              padding-left: 8px;
+              overflow: inherit;
+            }
+            .ant-form-item-explain-error {
+              padding-left: 20px;
+            }
+          }
+          .deptClass {
+            .ant-form-item-label {
+              overflow: inherit;
+            }
+          }
+          .ant-form-item-control-input-content {
+            display: flex;
+            align-items: center;
+          }
+          .inputPClass2 {
+            display: inline-block;
+            width: 30%;
+            .ant-form-item {
+              width: 100%;
+              margin-bottom: 0;
+              .ant-form-item-control {
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+      .rowFormFullClass {
+        :global {
+          .ipClass {
+            height: 40px !important;
+            .ant-form-item-control-input-content {
+              display: flex;
+              align-items: baseline;
+              justify-content: flex-start;
+            }
+            .ipSpanClass {
+              position: relative;
+              top: -5px;
+            }
+            .inputPClass {
+              margin-left: 4px;
+            }
+            .ipInputClass {
+              width: 163px;
+              height: 40px;
+            }
+            .ant-form-item-label {
+              position: relative;
+              padding-left: 28px;
+              overflow: inherit;
+            }
+            &.ant-form-item-with-help {
+              align-items: baseline;
+            }
+            // .ant-input-affix-wrapper {
+            //   height: 40px;
+            // }
+          }
+        }
+      }
+    }
+  }
+}

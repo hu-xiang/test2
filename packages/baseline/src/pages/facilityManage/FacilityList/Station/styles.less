@@ -1,0 +1,344 @@
+:global {
+  .crtStat.ant-modal {
+    .ant-select-selection-item {
+      color: #000;
+    }
+
+    .ant-select-selector {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .ant-input-number-handler:hover .ant-input-number-handler-up-inner,
+    .ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+      color: #0013c1;
+    }
+
+    .ant-form-item-label > label {
+      height: 40px;
+    }
+
+    .ant-modal-content {
+      .ant-input {
+        height: 40px;
+      }
+
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+        height: 40px;
+        line-height: 40px;
+      }
+
+      .ant-form-item {
+        height: inherit;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .crtedtSta.ant-modal .ant-select-selector {
+    height: 40px;
+  }
+
+  .crtedtSta.ant-modal {
+    width: 600px !important;
+
+    .ant-modal-body {
+      padding: 0;
+    }
+
+    .ant-input-number {
+      height: 40px;
+      line-height: 40px;
+
+      &:hover {
+        border-color: #0013c1;
+      }
+
+      &:focus {
+        border-color: #0013c1;
+        box-shadow: none;
+      }
+    }
+
+    .ant-input-number-focused {
+      border-color: #0013c1;
+      box-shadow: none;
+    }
+
+    .ant-input-number-handler:hover .ant-input-number-handler-up-inner,
+    .ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+      color: #0013c1;
+    }
+
+    .ant-form-item-label > label {
+      height: 40px;
+    }
+
+    .box {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding: 20px 20px 0 20px;
+    }
+
+    .ant-modal-content {
+      width: 600px;
+      margin: auto;
+
+      .ant-input {
+        height: 40px;
+      }
+
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+        height: 40px;
+        color: #000;
+        line-height: 40px;
+      }
+
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+
+    .ant-input[disabled] {
+      color: #000;
+    }
+
+    .roadNumText {
+      margin: 0 10px;
+      font-size: 16px;
+      line-height: 40px;
+    }
+  }
+}
+
+.crtStat {
+  :global {
+    .ant-upload {
+      .ant-btn {
+        height: 40px;
+        color: #000;
+      }
+    }
+
+    .ant-btn-sm {
+      background: #f1f1f1;
+      border: none;
+    }
+
+    .ant-btn-sm:hover,
+    .ant-btn-sm:focus {
+      color: #0013c1;
+      background: #f1f1f1;
+    }
+
+    .ant-upload-list-item-card-actions .anticon {
+      &:hover {
+        svg {
+          fill: #0013c1;
+        }
+      }
+    }
+  }
+
+  .uploadTopDown {
+    position: relative;
+    top: -20px;
+    left: -25px;
+    width: 110%;
+    height: 40px;
+    color: #ed7b2f;
+    background: rgba(237, 123, 47, 0.05);
+
+    .textBox {
+      display: inline-block;
+      padding-top: 10px;
+      padding-left: 30px;
+    }
+
+    span {
+      float: right;
+      margin-top: 10px;
+      margin-right: 20px;
+      color: #0013c1;
+      cursor: pointer;
+
+      &:hover {
+        color: #3345e7;
+      }
+    }
+  }
+
+  .uploadContent {
+    display: inline-flex;
+
+    .fileBox {
+      display: inline-flex;
+      height: 32px;
+      margin-top: 4px;
+      margin-left: 20px;
+      padding-left: 10px;
+      line-height: 32px;
+      background: rgba(0, 0, 0, 0.02);
+      border-radius: 4px;
+
+      .fileIcon {
+        display: inline-block;
+        margin-left: 10px;
+      }
+
+      .fileName {
+        display: inline-flex;
+        // min-width: 156px;
+        margin-left: 6px;
+        color: #0013c1;
+        cursor: pointer;
+
+        .firstName {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .lastName {
+          width: 40px;
+        }
+      }
+
+      .removeBnt {
+        display: inline-block;
+        margin-top: 2px;
+        padding: 0 10px;
+        color: #f45a5a;
+
+        :hover {
+          color: #f00;
+        }
+      }
+    }
+  }
+}
+
+#container {
+  .taskBack {
+    display: flex;
+    width: 110px;
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+
+    .backText {
+      padding-left: 10px;
+      color: #263141 !important;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+
+  // height: 100%;
+  // padding: 10px;
+  // :global {
+  // .Stationtable {
+  //   height: calc(100vh - 118px);
+  //   padding-top: 5px;
+  //   overflow: hidden;
+  //   // background: #fff;
+  //   .ant-pro-table {
+  //     height: 100%;
+  //   }
+
+  // .ant-table-thead {
+  //   color: #333;
+  // }
+  // .ant-table-thead > tr > th {
+  //   font-weight: bold;
+  // }
+  // .ant-table.ant-table-middle .ant-table-title,
+  // .ant-table.ant-table-middle .ant-table-footer,
+  // .ant-table.ant-table-middle tfoot > tr > th,
+  // .ant-table.ant-table-middle tfoot > tr > td,
+  // .ant-table.ant-table-middle .ant-table-thead > tr > th,
+  // .ant-table.ant-table-middle .ant-table-tbody > tr > td {
+  //   padding: 17px 8px 16px;
+  // }
+  //   .ant-table-body {
+  //     height: calc(100vh - 225px);
+  //     overflow-y: auto !important;
+  //   }
+  //   // .ant-table-tbody {
+  //   //   color: #666;
+  //   // }
+  //   // .ant-table-pagination.ant-pagination {
+  //   //   margin: 12px 0;
+  //   //   padding-right: 10px;
+  //   // }
+  //   // .ant-empty-normal {
+  //   //   height: 561px;
+  //   //   line-height: 558px;
+  //   // }
+  //   .ant-table-content {
+  //     height: calc(100vh - 168px) !important; //与表格滚动条设置对应
+  //     //overflow-y: auto !important;
+  //   }
+  //   .ant-table-empty {
+  //     //无数据时调整滚动条位置
+  //     .ant-table-content {
+  //       height: calc(100vh - 125px) !important; //与表格滚动条设置对应
+  //     }
+  //   }
+  //   .ant-table-placeholder {
+  //     .ant-table-cell {
+  //       max-width: 1000px;
+  //       height: calc(100vh - 150px) !important; //比表格滚动条设置要小，不然无数据时也有滚动条
+  //       border-bottom: none;
+  //     }
+  //   }
+  // }
+  // }
+  .Stationtop {
+    height: 40px;
+    margin-bottom: 10px;
+
+    // .usertoptxt {
+    //   display: inline-block;
+    //   margin-top: 5px;
+    //   color: #333;
+    //   font-weight: 600;
+    //   font-size: 16px;
+    //   line-height: 22px;
+    // }
+    .Stationtopsel {
+      padding-top: 10px;
+
+      :global {
+        .Stationsel {
+          height: 40px;
+          margin-right: 10px;
+          border-radius: 4px;
+        }
+
+        // .Stationtopadd.ant-btn {
+        //   height: 35px;
+        //   margin-right: 5px;
+        //   // margin-top: 10px;
+        //   border-radius: 4px;
+        // }
+        // .Stationtopadd.ant-btn-primary {
+        //   height: 35px;
+        //   margin-right: 10px;
+        //   // margin-top: 10px;
+        //   border-radius: 4px;
+        // }
+        // .ant-input-affix-wrapper {
+        //   height: 35px;
+        // }
+        // .ant-input-search-button {
+        //   height: 35px;
+        //   font-size: 16px;
+        // }
+      }
+    }
+  }
+}

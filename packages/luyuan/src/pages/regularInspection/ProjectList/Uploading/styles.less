@@ -1,0 +1,51 @@
+.uploadingBox {
+  min-height: 528px;
+
+  .itemPic {
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    width: 487px;
+    height: 72px;
+
+    .leftPic {
+      position: absolute;
+      top: 14px;
+      left: 10px;
+      display: flex;
+      .fileName {
+        margin-top: 12px;
+        margin-left: 10px;
+      }
+    }
+
+    .itemStatus {
+      position: absolute;
+      right: 40px;
+    }
+    .isAgainUpload {
+      color: #e94141;
+      cursor: pointer;
+    }
+  }
+}
+
+:global {
+  .ant-modal-wrap {
+    overflow: hidden !important;
+  }
+}
+
+.isSmall {
+  position: fixed;
+  right: 40px;
+  bottom: 150px;
+  z-index: 999999 !important;
+  padding: 0 10px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.isOutSmall {
+  visibility: hidden;
+}

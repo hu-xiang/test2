@@ -1,0 +1,28 @@
+export const tableList = [
+  {
+    id: 1,
+    facilityName: '深南大道',
+    roadName: '深南大道',
+    facilityType: 1,
+    facilityLength: 1000,
+    startPoint: '海湾路',
+    endPoint: '兴海大道',
+    deviceName: '养护一队巡检设备01',
+    inspectFrequency: '7天/次',
+    startTime: '2022-07-11',
+    endTime: '2022-07-11',
+  },
+  {
+    id: 2,
+    facilityName: '深南大道',
+    roadName: '深南大道',
+    facilityType: 1,
+    facilityLength: 1000,
+    startPoint: '海湾路',
+    endPoint: '兴海大道',
+    deviceName: '养护一队巡检设备02',
+    inspectFrequency: '7天/次',
+    startTime: '2022-07-11',
+    endTime: '2022-07-11',
+  },
+];

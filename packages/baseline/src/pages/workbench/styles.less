@@ -1,0 +1,83 @@
+#container {
+  // min-width: 1700px;
+  height: 100%;
+  padding: 0 10px 0;
+  padding-top: 40px;
+  .imglookbox {
+    margin: 0 -10px !important;
+    .colCss {
+      padding: 0 10px !important;
+    }
+    .uplimg {
+      display: inline-block;
+      .imgnum1 {
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 30px;
+      }
+      .imgnum2 {
+        margin-left: 11px;
+        color: #262626;
+        font-size: 14px;
+      }
+    }
+    .rightpic {
+      float: right;
+      width: 60px;
+      height: 44px;
+    }
+
+    :global {
+      .ant-col {
+        height: 152px;
+      }
+      .ant-card-head {
+        height: 54px;
+        color: #000;
+        font-size: 16px;
+      }
+      .ant-card-body {
+        height: 98px;
+      }
+    }
+  }
+  .botbox {
+    height: calc(100% - 182px);
+    margin-top: 20px;
+    background: none;
+    .topTitle {
+      height: 56px;
+      padding-left: 20px;
+      font-size: 16px;
+      line-height: 56px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .linepic {
+      width: calc(100% - 10px);
+      height: calc(100vh - 400px) !important;
+      padding-top: 10px;
+      :global {
+        .g2-tooltip {
+          .g2-tooltip-title {
+            font-size: 16px;
+          }
+          .g2-tooltip-list {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .botcard1 {
+      display: inline-block;
+      width: calc(50% - 10px);
+      height: 100%;
+      background: #fff;
+    }
+    .botcard2 {
+      display: inline-block;
+      width: calc(50% - 10px);
+      height: 100%;
+      margin-left: 20px;
+      background: #fff;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.tabsStyle {
+  .divider {
+    position: absolute;
+    top: 69px;
+    left: 20px;
+    width: calc(100% - 40px);
+    border-bottom: 1px solid #dcdfe6;
+  }
+  :global {
+    .ant-tabs > .ant-tabs-nav {
+      position: relative;
+      top: 23px;
+      // left: 20px;
+      display: flex;
+      flex: none;
+      align-items: center;
+      margin-left: 20px;
+      // color: #0013C1;
+    }
+    .ant-tabs-tab-btn {
+      &:hover {
+        color: #0013c1;
+      }
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #0013c1;
+    }
+
+    .ant-tabs-ink-bar {
+      background: #0013c1;
+    }
+  }
+}

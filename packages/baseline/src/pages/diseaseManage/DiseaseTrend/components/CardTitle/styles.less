@@ -1,0 +1,102 @@
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.row-container {
+  .flex-row;
+
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(232, 232, 232, 1);
+}
+.left-title {
+  width: 44%;
+  // padding-left: 10px;
+  color: #000;
+  font-size: 16px;
+}
+.right-content {
+  .flex-row;
+
+  justify-content: flex-end;
+}
+.right-button-export {
+  margin-left: 10px;
+  color: #0013c1;
+  font-size: 14px;
+  cursor: pointer;
+}
+.tab-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tab-button-ul {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 7.29vw;
+  min-width: 140px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  .li-class {
+    display: inline-block;
+    flex: 1;
+    height: 24px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    background: #ecedf2;
+    border-radius: 32px;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+    &.active-class {
+      box-sizing: border-box;
+      color: rgba(255, 255, 255, 1);
+      background: #0013c1;
+      border-radius: 32px;
+    }
+  }
+}
+.ellipsis-title {
+  width: 50%;
+}
+@media screen and (max-width: 1410px) {
+  .left-title {
+    width: 32% !important;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .left-title {
+    width: 26% !important;
+  }
+}
+
+.roadTypeSelect {
+  :global {
+    .ant-select {
+      height: 24px !important;
+      line-height: 24px !important;
+    }
+
+    .ant-select .ant-select-selector {
+      height: 24px !important;
+      line-height: 24px !important;
+    }
+    .ant-select-single .ant-select-selector .ant-select-selection-item {
+      height: 24px !important;
+      line-height: 24px !important;
+    }
+    .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+      height: 24px !important;
+      line-height: 24px !important;
+    }
+  }
+}

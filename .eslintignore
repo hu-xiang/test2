@@ -1,0 +1,9 @@
+/lambda/
+/scripts
+packages/**/config
+packages/**/.history
+packages/**/public
+packages/**/dist
+packages/**/.umi
+packages/**/mock
+**/node_modules

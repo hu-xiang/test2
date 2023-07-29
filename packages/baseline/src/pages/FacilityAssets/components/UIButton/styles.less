@@ -1,0 +1,41 @@
+.tab-button-container {
+  position: absolute;
+  top: 104px;
+  // z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.tab-button-ul {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 16.6vw;
+  min-width: 220px;
+  max-width: 320px;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 100px;
+  backdrop-filter: blur(10px);
+  .li-class {
+    display: inline-block;
+    flex: 1;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    &.active-class {
+      box-sizing: border-box;
+      width: 8.3vw;
+      max-width: 160px;
+      color: rgba(255, 255, 255, 1);
+      background: rgba(55, 87, 255, 0.8);
+      border-radius: 100px;
+    }
+  }
+}

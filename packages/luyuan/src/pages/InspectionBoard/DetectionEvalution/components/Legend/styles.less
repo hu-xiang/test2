@@ -1,0 +1,98 @@
+/*
+ * @Author: wf
+ * @Date: 2022-07-06 16:55:42
+ * @Last Modified by: wf
+ * @description:   legend样式
+ * @Last Modified time: 2022-07-20 11:38:48
+ */
+
+.numColor {
+  font-weight: 400;
+  font-size: 12px;
+  .rowLengend {
+    padding: 5px 0;
+    & > .colLengend:nth-child(-n + 2) {
+      border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+  }
+  .point {
+    height: 27px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 27px;
+  }
+  .numTxt {
+    color: #fff;
+    .point;
+  }
+  .nameTxt {
+    .point;
+  }
+  .numNum {
+    display: -webkit-box;
+    width: 100%;
+    height: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    .point;
+  }
+
+  .traffic {
+    .numNum;
+
+    width: auto;
+    margin-left: 10px;
+  }
+  .numcolor1 {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #fae14d;
+    border-radius: 6px;
+  }
+  .numcolor2 {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #f0af3e;
+    border-radius: 6px;
+  }
+  .numcolor3 {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #ee6b0c;
+    border-radius: 6px;
+  }
+  .numcolor4 {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #ff5656;
+    border-radius: 6px;
+  }
+  .traffic-smooth {
+    display: inline-block;
+    width: 6px;
+    height: 2px;
+    vertical-align: middle;
+    background: rgba(55, 255, 235, 1);
+  }
+
+  .traffic-amber {
+    .traffic-smooth;
+
+    background: rgba(59, 134, 246, 1);
+  }
+  .traffic-congestion {
+    .traffic-smooth;
+
+    background: rgba(240, 175, 62, 1);
+  }
+  .dark-congestion {
+    .traffic-smooth;
+
+    background: rgba(255, 86, 86, 1);
+  }
+}

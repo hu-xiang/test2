@@ -1,0 +1,55 @@
+.projectDetect {
+  :global {
+    .ant-tabs > .ant-tabs-nav {
+      position: absolute;
+      top: 23px;
+      left: 160px;
+      display: flex;
+      flex: none;
+      align-items: center;
+      // color: #0013C1;
+    }
+    .ant-tabs-tab-btn {
+      &:hover {
+        color: #0013c1;
+      }
+    }
+
+    .ant-tabs-tab-disabled .ant-tabs-tab-btn {
+      &:hover {
+        color: rgba(0, 0, 0, 0.25) !important;
+      }
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #0013c1;
+    }
+
+    .ant-tabs-ink-bar {
+      background: #0013c1;
+    }
+  }
+
+  .divider {
+    position: absolute;
+    top: 69px;
+    left: 20px;
+    width: calc(100% - 40px);
+    border-bottom: 1px solid #dcdfe6;
+  }
+
+  .projectBack {
+    display: flex;
+    width: 110px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+
+    .backText {
+      padding-left: 10px;
+      color: #263141 !important;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+}

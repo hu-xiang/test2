@@ -1,0 +1,47 @@
+@import '~antd/es/style/themes/default.less';
+
+:global {
+  .h400Class {
+    height: 400px;
+  }
+}
+.emptyChartClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(220, 223, 230, 0.6);
+  font-size: 18px;
+  .dataEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    :global {
+      .ant-empty-image svg {
+        color: rgba(255, 255, 255, 1);
+        opacity: 0.3;
+      }
+      .ant-empty-description {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  .emptyTxt {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+.empty-img-white {
+  width: 70px;
+}
+.emptyWhiteBgTxt {
+  margin-top: 14px;
+  color: #999;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.6;
+}

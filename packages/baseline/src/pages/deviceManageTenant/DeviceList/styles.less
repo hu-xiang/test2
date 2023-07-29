@@ -1,0 +1,323 @@
+.crtedtDev {
+  position: relative;
+  .treecard {
+    position: absolute;
+    top: 375px;
+    right: 25px;
+    z-index: 999;
+    width: 540px;
+    max-height: 350px;
+    overflow-y: auto;
+    border-radius: 4px;
+  }
+  .ant-upload-list-item-card-actions-btn.ant-btn-sm {
+    background: transparent !important;
+  }
+  // .updelwaper {
+  //   position: absolute;
+  //   z-index: 999;
+  //   width: 100%;
+  //   margin-top: 5px;
+  //   .uplodelbox {
+  //     // display: flex;
+  //     // justify-content: space-between;
+  //     padding: 1px 5px;
+  //     color: #0013c1;
+  //     &:hover {
+  //       background: #f6f7f9;
+  //     }
+  //     .uplodel {
+  //       float: right;
+  //       color: #999;
+  //       cursor: pointer;
+  //       :hover {
+  //         color: #0013c1;
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+:global {
+  .headModal {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    .leftTxt {
+      color: rgba(0, 0, 0, 1);
+      font-size: 14px;
+    }
+    .rightTxt {
+      & > span:nth-child(1) {
+        margin-right: 10px;
+      }
+      .disableClose {
+        cursor: not-allowed;
+      }
+    }
+  }
+  // .crtedtDev.ant-modal .ant-select-selector {
+  //   height: 40px;
+  // }
+  .DemarcateImgLib.ant-modal,
+  .DemarcateSet.ant-modal,
+  .parameter.ant-modal {
+    // .ant-input[disabled] {
+    //   color: #000;
+    // }
+    label {
+      height: 40px;
+    }
+    // .ant-form {
+    //   .ant-input {
+    //     height: 40px;
+    //   }
+    //   .ant-select-single .ant-select-selector .ant-select-selection-item {
+    //     display: inline-block;
+    //     height: 40px;
+    //     line-height: 40px;
+    //   }
+    //   .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    //     height: 40px;
+    //   }
+    //   .ant-select:not(.ant-select-customize-input)
+    //     .ant-select-selector
+    //     .ant-select-selection-search-input {
+    //     height: 40px;
+    //   }
+    //   .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+    //     height: 40px;
+    //     color: #000;
+    //     line-height: 40px;
+    //   }
+    //   .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+    //     height: 40px;
+    //     line-height: 40px;
+    //   }
+    // }
+    .ant-table-thead > tr > th {
+      background: #f4f8ff !important;
+    }
+  }
+  .crtedtDev.ant-modal {
+    .crtNumBox {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+    }
+    .ant-input-number {
+      // margin-right: 10px;
+      width: 67.7px;
+      // height: 40px;
+      // line-height: 40px;
+      // &:hover {
+      //   border-color: #0013c1;
+      // }
+      // &:focus {
+      //   border-color: #0013c1;
+      //   box-shadow: none;
+      // }
+    }
+    // .ant-input-number-focused {
+    //   border-color: #0013c1;
+    //   box-shadow: none;
+    // }
+    // .ant-input-number-handler:hover .ant-input-number-handler-up-inner,
+    // .ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+    //   color: #0013c1;
+    // }
+    // .ant-form-item-label > label {
+    //   height: 40px;
+    // }
+    .box {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      // padding: 24px;
+    }
+    .ant-modal-content {
+      // width: 600px;
+      margin: auto;
+      // .ant-input {
+      //   height: 40px;
+      // }
+
+      // .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+      //   height: 40px;
+      //   color: #000;
+      //   line-height: 40px;
+      // }
+      // .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+      //   height: 40px;
+      //   line-height: 40px;
+      // }
+    }
+    .crtNum {
+      .ant-input {
+        width: 67.7px;
+      }
+    }
+    // .ant-input[disabled] {
+    //   color: #000;
+    // }
+    .roadNumText {
+      margin: 0 10px;
+      font-size: 16px;
+      line-height: 40px;
+    }
+  }
+  .DemarcateImgLib2.ant-modal {
+    width: 800px !important;
+    .ant-form-item {
+      display: inline-flex;
+      width: 50%;
+    }
+    .ant-modal-content {
+      width: 800px;
+    }
+    .ant-modal-body {
+      padding-bottom: 0;
+    }
+    .ant-table-body {
+      overflow-y: auto !important;
+    }
+  }
+  .parameter1.ant-modal {
+    width: 700px !important;
+    .ant-modal-body {
+      padding-right: 40px;
+    }
+    .ant-modal-content {
+      width: 700px;
+    }
+  }
+
+  .uploadingClass {
+    color: #a3a6c5;
+    cursor: not-allowed;
+  }
+  .ant-spin-blur {
+    opacity: 1;
+  }
+  .ant-spin-blur::after {
+    opacity: 0.6;
+  }
+  .ant-spin-nested-loading > div > .loadingbox {
+    z-index: 999;
+  }
+  .ant-spin-nested-loading > div > .loadingbox .ant-spin-dot {
+    top: 64%;
+    left: 34%;
+  }
+
+  .sliderhei {
+    .ant-slider-rail {
+      height: 8px;
+    }
+    .ant-slider-track {
+      height: 8px;
+    }
+    .ant-slider-step {
+      height: 8px;
+    }
+  }
+
+  .statusDetailModal.ant-modal {
+    .ant-modal-body {
+      padding: 20px;
+    }
+    .ant-table-body {
+      overflow-y: auto !important;
+    }
+    .statusDetailSearch {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0 20px 0;
+      .statusTxt {
+        flex: none;
+        margin-right: 10px;
+      }
+      .statusInput {
+        display: contents;
+        .ant-input[disabled] {
+          color: #000;
+        }
+      }
+    }
+    .ant-table-thead > tr > th {
+      background: #f4f8ff !important;
+    }
+  }
+  .picbox.ant-modal {
+    top: 40px;
+    width: 998px !important;
+    .ant-modal-content {
+      width: 998px;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0);
+      box-shadow: none;
+      .ant-modal-body {
+        padding: 50px 0 0 100px;
+      }
+    }
+  }
+  .disableStart {
+    cursor: pointer !important;
+  }
+}
+.detailOperate {
+  :global {
+    .ant-image {
+      position: absolute;
+      top: 10px;
+      left: 8px;
+      z-index: 1;
+      width: 50px;
+      height: 20px;
+      overflow: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+.popconfirm {
+  min-width: 200px;
+}
+.imgbtn {
+  background: #fff;
+}
+.imgbtn:hover,
+.imgbtn:focus {
+  color: #0013c1;
+  background: #fff;
+  border-color: #3345e7;
+}
+.emptyList {
+  text-align: center;
+}
+
+.carInnerModal {
+  .videoChannelSwitch {
+    padding-left: 10px;
+    overflow: hidden;
+    color: #000;
+    line-height: 38px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .channelSelected {
+    width: 154px;
+    height: 38px;
+    background: rgba(147, 151, 174, 0.2);
+    border-radius: 6px;
+    backdrop-filter: blur(15px);
+  }
+}

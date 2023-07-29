@@ -1,0 +1,86 @@
+.ImgCanvasModal {
+  :global {
+    .ant-modal-close-x {
+      margin-top: 10px;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      color: #0013c1;
+      border-color: #0013c1;
+    }
+
+    .ant-radio-button-wrapper:hover {
+      color: #0013c1;
+    }
+
+    .ant-radio-button-wrapper-checked:not([class*='ant-radio-button-wrapper-disabled'])
+      .ant-radio-button-wrapper:first-child {
+      border-right-color: #0013c1;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+      border-color: #0013c1;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+      background-color: #0013c1;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+      box-shadow: none;
+    }
+  }
+}
+
+.ImgCanvasContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: calc(100% - 74px);
+  margin: 20px 0 0 0;
+  background: #eff1f4;
+
+  .ImgContent {
+    width: calc(100% - 200px);
+  }
+
+  .leftRightIcon {
+    width: 100px;
+    text-align: center;
+
+    .iconNone {
+      path {
+        opacity: 0.1;
+        fill: #000;
+      }
+
+      font-size: 76px;
+      cursor: not-allowed;
+    }
+
+    .leftIcon,
+    .rightIcon {
+      path {
+        opacity: 0.1;
+        fill: #000;
+      }
+
+      font-size: 76px;
+      cursor: pointer;
+
+      &:hover {
+        path {
+          opacity: 0.2;
+          fill: #000;
+        }
+      }
+    }
+  }
+}
+
+.ImgRadio {
+  position: relative;
+  top: 0;
+  line-height: 20px;
+}

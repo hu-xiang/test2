@@ -1,0 +1,59 @@
+.inputUpload {
+  .fileContent {
+    width: 438px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+
+    .fileBox {
+      display: inline-flex;
+      justify-content: space-between;
+      width: calc(100% - 40px);
+
+      .fileNameStyle {
+        width: 370px;
+        padding: 0 10px;
+        overflow: hidden;
+        color: #0013c1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .fileRemoveBtn {
+        padding-right: 10px;
+        color: #666;
+        line-height: 44px;
+        cursor: pointer;
+        :hover {
+          color: #ff4d4f;
+        }
+      }
+    }
+
+    .placeholderStyle {
+      padding: 0 10px;
+      color: #bfbfbf;
+      font-size: 14px;
+    }
+
+    .rightUploadBtn {
+      float: right;
+      width: 40px;
+      height: 38px;
+      line-height: 40px;
+      text-align: center;
+      background: #fafafa;
+      border-left: 1px solid #dcdfe6;
+      border-radius: 0 4px 4px 0;
+
+      .uploadIcon {
+        color: #666;
+        cursor: pointer;
+        :hover {
+          color: #0013c1;
+        }
+      }
+    }
+  }
+}

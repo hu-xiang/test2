@@ -1,0 +1,129 @@
+:global {
+  .crtFacility.ant-modal .ant-select-selector,
+  .ant-btn {
+    height: 40px;
+  }
+  .crtFacility .ant-input[disabled],
+  .common-color
+    .ant-select-disabled.ant-select:not(.ant-select-customize-input)
+    .ant-select-selector,
+  .ant-select-disabled.ant-select-multiple .ant-select-selection-item {
+    color: #000 !important;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-color: #d8d8d8;
+  }
+
+  .crtFacility.ant-modal {
+    width: 1046px !important;
+    padding-bottom: 0;
+
+    .ant-input-number {
+      height: 40px;
+      line-height: 40px;
+
+      &:hover {
+        border-color: #0013c1;
+      }
+
+      &:focus {
+        border-color: #0013c1;
+        box-shadow: none;
+      }
+    }
+
+    .ant-input-number-focused {
+      border-color: #0013c1;
+      box-shadow: none;
+    }
+
+    .ant-input-number-handler:hover .ant-input-number-handler-up-inner,
+    .ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+      color: #0013c1;
+    }
+
+    .ant-form-item-label > label {
+      height: 40px;
+    }
+
+    .box {
+      box-sizing: border-box;
+      width: 100%;
+      height: calc(100vh - 300px);
+      max-height: 522px;
+      padding: 20px 20px 0 20px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #c0c0c0;
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          background: #7c7c7c;
+        }
+      }
+    }
+
+    .treecard {
+      position: absolute;
+      top: 110px;
+      right: 20px;
+      z-index: 999;
+      width: 450px;
+      max-height: 350px;
+      overflow-y: auto;
+      border-radius: 4px;
+    }
+
+    .ant-modal-body {
+      height: 100%;
+      padding: 0;
+    }
+
+    .ant-modal-content {
+      width: 1046px;
+      margin: auto;
+
+      .ant-input {
+        height: 40px;
+      }
+
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+.titleArea {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  .btnGroup {
+    :global {
+      .delBtn {
+        color: #0013c1;
+        border-color: #0013c1;
+        span {
+          margin-left: 5px;
+          vertical-align: middle;
+        }
+      }
+      .disabledBtn {
+        span {
+          margin-left: 5px;
+          vertical-align: middle;
+        }
+      }
+    }
+    button {
+      margin-right: 20px;
+    }
+  }
+}

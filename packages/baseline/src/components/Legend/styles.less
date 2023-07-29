@@ -1,0 +1,163 @@
+/*
+ * @Author: wf
+ * @Date: 2022-07-06 16:55:42
+ * @Last Modified by: wf
+ * @description:   legend样式
+ * @Last Modified time: 2022-11-10 11:40:32
+ */
+
+.numColor {
+  height: 100%;
+  font-weight: 400;
+  font-size: 12px;
+
+  .rowLengend {
+    height: 100%;
+    padding: 5px 0;
+
+    .colLengend {
+      height: 100%;
+    }
+
+    & > .colLengend:nth-child(-n + 2) {
+      .hasBorder {
+        border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+      }
+    }
+  }
+
+  .point {
+    height: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 30px;
+  }
+
+  .numTxt {
+    color: #fff;
+    .point;
+  }
+
+  .nameTxt {
+    .point;
+  }
+
+  .numNum {
+    display: -webkit-box;
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    color: #fff;
+    // line-height: 0;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .num-img-height {
+    .numNum;
+
+    height: 36px;
+
+    // line-height: 35px;
+    .img-txt {
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+
+  .numLineHeight {
+    .numNum;
+
+    height: 25%;
+    // line-height: 0;
+  }
+
+  .img-margin {
+    margin-right: 0.5vw;
+  }
+
+  .space-height {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .space-height-left,
+  .space-height-middle {
+    height: 100%;
+  }
+
+  .traffic {
+    .numNum;
+
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .numcolor1 {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #fae14d;
+    border-radius: 6px;
+  }
+
+  .numcolor2 {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #f0af3e;
+    border-radius: 6px;
+  }
+
+  .numcolor3 {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #ee6b0c;
+    border-radius: 6px;
+  }
+
+  .numcolor4 {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #ff5656;
+    border-radius: 6px;
+  }
+
+  .traffic-smooth {
+    display: inline-block;
+    width: 6px;
+    height: 2px;
+    vertical-align: middle;
+    background: rgba(118, 240, 164, 1);
+  }
+
+  .traffic-amber {
+    .traffic-smooth;
+
+    background: rgba(59, 134, 246, 1);
+  }
+
+  .traffic-middle {
+    .traffic-smooth;
+
+    background: rgba(151, 134, 255, 1);
+  }
+
+  .traffic-congestion {
+    .traffic-smooth;
+
+    background: rgba(240, 175, 62, 1);
+  }
+
+  .dark-congestion {
+    .traffic-smooth;
+
+    background: rgba(255, 86, 86, 1);
+  }
+}

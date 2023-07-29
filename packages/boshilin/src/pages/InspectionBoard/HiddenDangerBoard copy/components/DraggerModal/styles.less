@@ -1,0 +1,243 @@
+.map-dis-pop-modal {
+  :global {
+    .map-pop-img {
+      border: 0.5px solid rgba(255, 255, 255, 0.3);
+      border-radius: 6px;
+    }
+    .map-pop-content {
+      margin-top: 0 !important;
+    }
+    .ant-image-img-placeholder {
+      background-color: transparent;
+    }
+  }
+  .diseaseRowCommon {
+    display: flex;
+    flex-flow: row nowrap;
+    color: rgba(255, 255, 255, 0.8);
+    .diseaseLeftInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .diseasePlayInfo {
+        width: 230px;
+        margin-top: 8px;
+      }
+    }
+    .diseaseRightInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 194px;
+      height: 100%;
+      margin-left: 20px;
+      padding-right: 10px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 12px;
+      line-height: 24px;
+      white-space: wrap;
+      // text-overflow: ellipsis;
+      .title-class {
+        display: block;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .scene-info-class {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        .scene-info-name {
+          overflow: hidden;
+          color: rgba(255, 86, 86, 0.8);
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          // white-space: nowrap;
+          // text-overflow: ellipsis;
+        }
+      }
+      .scene-info-panel {
+        width: 100%;
+        height: calc(100% - 26px);
+        overflow-x: hidden;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          width: 6px;
+          height: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 34px;
+          // box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+          &:hover {
+            background: #7c7c7c;
+          }
+        }
+      }
+      .remark-info {
+        width: 100%;
+        margin-top: 6px;
+        .remark-content-class {
+          display: block;
+          color: rgba(255, 255, 255, 0.6);
+          white-space: pre-wrap;
+          word-wrap: break-word;
+          word-break: break-word;
+        }
+      }
+      .diseaseTypeClass {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+
+  .dragRowInfo {
+    height: calc(100% - 56px);
+    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+    overflow: hidden;
+  }
+}
+.draggerModalClass {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  width: 545px;
+  height: 275px;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  .dragHeadTitle {
+    position: relative;
+    height: 46px;
+    padding-left: 24px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+.modalRowTitle {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  .leftContent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  .rightContent {
+    .closeModalClass {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url('../../../../../../public/images/modal/closeButton.svg') no-repeat;
+      background-size: 100% 100%;
+      cursor: pointer;
+    }
+    .closeModalInfoClass {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url('../../../../../../public/images/modal/closeButton.svg') no-repeat;
+      background-size: 100% 100%;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+  .rightButton {
+    padding-right: 25px;
+  }
+  .modalTitleImg {
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    background: #3758ff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transform: rotate(-45deg);
+  }
+}
+.tab-button-ul {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 15.6vw;
+  min-width: 72px;
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  .li-class {
+    display: inline-block;
+    flex: 1;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    &.active-class {
+      box-sizing: border-box;
+      width: 6.25vw;
+      max-width: 100px;
+      color: rgba(255, 255, 255, 1);
+      background: rgba(55, 87, 255, 0.8);
+      border-radius: 100px;
+    }
+  }
+}
+.image-root-class {
+  :global {
+    .ant-image-preview-img {
+      width: 100vw;
+    }
+    .ant-image-preview-operations {
+      height: 60px;
+    }
+    .ant-image-mask {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.tab-button-container {
+  position: absolute;
+  top: 10px;
+  z-index: 9999999;
+}
+.diseaseLeftTopInfo {
+  position: relative;
+}
+.commonButton {
+  position: absolute;
+  top: 106px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  // opacity: 0.6;
+  background-size: 100% 100%;
+}
+.leftButtonImg {
+  .commonButton;
+
+  // top: 104px;
+  left: 0;
+  // transform: rotate(180deg);
+  background: url('../../../../../assets/img/buttonTabs/prePic.svg') no-repeat;
+}
+.rightButtonImg {
+  .commonButton;
+
+  right: 0;
+  background: url('../../../../../assets/img/buttonTabs/nextPic.svg') no-repeat;
+}

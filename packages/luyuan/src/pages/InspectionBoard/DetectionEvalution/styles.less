@@ -1,0 +1,505 @@
+:global {
+  .searchFacilityClass.right-head-select {
+    position: relative !important;
+    right: 0 !important;
+    width: 3.75vw !important;
+    max-width: 72px !important;
+  }
+  .searchFacilityClass.modal-select {
+    &.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      height: 32px !important;
+      line-height: 32px !important;
+    }
+    .ant-select-selector .ant-select-selection-item {
+      line-height: 32px !important;
+    }
+  }
+  .viewTop5TableClass.last-protable .ant-table-placeholder {
+    .tableEmptyClass .tableEmptyImgClass {
+      width: 54% !important;
+      height: 10.5vh !important;
+      max-height: 80%;
+    }
+  }
+}
+.headLeftClass {
+  display: flex;
+  justify-content: center;
+}
+.leftTopClass {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 24px;
+  img,
+  span {
+    display: block;
+  }
+}
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.evationContainerClass {
+  height: 100%;
+  :global {
+    .modalSpeDiv {
+      position: relative;
+      top: 104px;
+      display: block;
+      width: 483px;
+      height: 0;
+      margin: 0 auto;
+      overflow: hidden;
+      .ant-modal-root {
+        position: relative;
+      }
+      .ant-modal-wrap {
+        top: 100px;
+        width: 526px;
+        height: 294px;
+        margin: 0 auto;
+        overflow: hidden;
+        .ant-modal {
+          top: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.card-unit-score {
+  height: 38% !important;
+}
+.project-score-statics {
+  .flex-row;
+
+  height: calc(100% - 56px);
+  margin-top: 0.83vh;
+  .project-score-card {
+    display: flex;
+    flex: 1;
+    flex-flow: row nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 49.5%;
+    height: 82px;
+    padding: 0 0.5vw;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    background: rgba(147, 151, 174, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(30px);
+    .project-score-card-left {
+      flex: 1 1 28%;
+      max-width: 28%;
+    }
+    .project-score-card-right {
+      .flex-column;
+
+      flex: 1 1 70%;
+      align-items: flex-start;
+      max-width: 70%;
+      .top-txt {
+        margin-top: 12px;
+        line-height: 14px;
+      }
+      .num-txt {
+        font-weight: 400;
+        font-size: 32px;
+        font-family: 'Bebas-Neue', sans-serif;
+        font-style: normal;
+        line-height: 43px;
+      }
+    }
+    &:first-of-type {
+      margin-right: 10px;
+    }
+  }
+}
+.circle-plot {
+  height: 100%;
+}
+.card-right-txt {
+  height: 31px !important;
+  border-bottom: none !important;
+}
+.ring-box {
+  position: relative;
+  height: 100%;
+  .avg-class-div {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    height: 32px;
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(147, 151, 174, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    backdrop-filter: blur(30px);
+    .avg-class-score {
+      position: relative;
+      top: 1px;
+      margin-left: 20px;
+      font-size: 18px;
+      font-family: 'Bebas-Neue', sans-serif;
+    }
+  }
+}
+.right-card-statics {
+  .flex-column;
+
+  justify-content: flex-start;
+  .top-null {
+    top: 0 !important;
+    margin-left: 10px !important;
+  }
+  .zero-class {
+    background-color: rgba(55, 88, 255, 0.2) !important;
+    border: 1px solid rgba(55, 88, 255, 1) !important;
+  }
+  .up-arrow-class {
+    background-color: rgba(118, 240, 164, 0.2) !important;
+    border: 1px solid #76f0a4 !important;
+  }
+}
+.bottom-class {
+  justify-content: flex-start !important;
+}
+.txt-right-first-card {
+  font-weight: 400;
+  font-size: 14px;
+}
+.img-right-first-card {
+  width: 21px;
+  height: 21px;
+  margin-left: 6.5px;
+}
+.mag-top10 {
+  margin-top: 0.581vh !important;
+}
+.right-card-height {
+  height: 100% !important;
+}
+.search-input {
+  height: 40px;
+  padding: 4px 20px;
+  // color: rgba(255, 255, 255, 0.9);
+  line-height: 40px;
+  background: rgba(147, 151, 174, 0.2);
+  border: none;
+  border-radius: 58px;
+  backdrop-filter: blur(30px);
+  :global {
+    .ant-input-affix-wrapper {
+      background: rgba(147, 151, 174, 0.2);
+      border: none;
+      border-radius: 58px;
+    }
+    .ant-input-clear-icon {
+      color: rgba(147, 151, 174, 0.9);
+    }
+    .ant-input {
+      color: rgba(255, 255, 255, 0.9);
+      background: rgba(147, 151, 174, 0);
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}
+// 公共
+.modal-card-common {
+  height: 735px !important;
+  :global {
+    .ant-modal-body {
+      height: 608px !important;
+    }
+    .ant-modal-title {
+      font-weight: 400 !important;
+    }
+  }
+  .select-card {
+    display: flex;
+    justify-content: flex-end;
+    height: 32px !important;
+  }
+  .modal-card {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: calc(100% - 52px) !important;
+
+    .modal-card-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 50%;
+      height: 50%;
+      max-height: 50%;
+      padding: 0 10px;
+      .card-item-head {
+        .flex-row;
+
+        align-items: center;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 44px;
+        .icon-txt {
+          .titleCommonImg;
+        }
+      }
+      .card-item-line {
+        height: calc(100% - 44px) !important;
+        max-height: calc(100% - 44px) !important;
+      }
+      &.modal-card-item-height {
+        height: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}
+// 单元评分情况
+.modal-card-scores {
+  .modal-card-common;
+
+  height: 735px !important;
+  :global {
+    .ant-modal-body {
+      height: 608px !important;
+    }
+  }
+}
+.modal-card-dedu {
+  .modal-card-common;
+
+  height: 470px !important;
+  :global {
+    .ant-modal-body {
+      height: 343px !important;
+    }
+  }
+}
+// 右侧看板的样式
+.card-project-class {
+  height: 61.2% !important;
+  .card-project-body {
+    height: calc(100% - 47px);
+    margin-top: 0.83vh;
+    color: rgba(255, 255, 255, 0.6) !important;
+    .card-project-img {
+      width: 100%;
+      // height: 34%;
+      height: calc((100% - 160px) * 130 / 222);
+      min-height: 75px;
+    }
+    .card-project-info {
+      width: 100%;
+      height: 140px;
+      margin-top: 0.83vh;
+      .project-info-head {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+      }
+      .project-info-content {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        height: calc(100% - 24px);
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+        max-width: 49%;
+      }
+      .pro-column-card-left {
+        .flex-column;
+
+        align-items: flex-start;
+        width: 49%;
+      }
+      .pro-column-card-right {
+        .flex-column;
+
+        align-items: flex-end;
+        width: 40%;
+      }
+      .pro-item-key {
+        width: 99%;
+        overflow: hidden;
+        line-height: 29px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    .card-project-rate {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // height: 21.4%;
+      height: calc((100% - 160px) * 82 / 222);
+      min-height: 52px;
+      margin-top: 0.83vh;
+      background: rgba(147, 151, 174, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      backdrop-filter: blur(30px);
+      .rate-txt {
+        color: rgba(59, 134, 246, 1);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .rate-description {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+    :global {
+      .ant-image {
+        display: block;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+      }
+      .ant-image-img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+      }
+      .ant-image-mask {
+        display: block;
+        height: 100%;
+        .ant-image-mask-info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.right-head {
+  .flex-row;
+
+  width: 8.02vw !important;
+  max-width: 154px !important;
+  height: 22px;
+  & > div:first-child {
+    margin-right: 10px !important;
+  }
+}
+.card-score-height {
+  height: calc(100% - 41px) !important;
+}
+.titleCommonImg {
+  width: 6px;
+  height: 6px;
+  margin-right: 6.34px;
+  background: #3758ff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transform: rotate(-45deg);
+}
+
+.card-item-empty {
+  height: 100%;
+}
+.card-line-chart {
+  height: 100%;
+}
+.left-inspect-panel {
+  // position: absolute;
+  top: 104px;
+  bottom: 0;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  // z-index: 2;
+  width: 19.7vw;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  .card-store-statics {
+    flex: 1 1 16.4%;
+    min-height: 149px !important;
+  }
+  .card-score-distribution {
+    // height: 28% !important;
+    flex: 1 1 28%;
+  }
+  .card-fac-table {
+    flex: 1 1 23.2%;
+    // height: 23.7% !important;
+  }
+  .card-dec-distribution {
+    flex: 1 1 27.3%;
+    // height: 26.9% !important;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .num-txt {
+    font-size: 28px !important;
+  }
+}
+@media screen and (max-width: 1690px) {
+  .avg-class-div {
+    bottom: 0 !important;
+    height: 26px !important;
+    padding: 0 3px !important;
+  }
+}
+@media screen and (max-width: 1566px), screen and (max-height: 840px) {
+  .avg-class-div {
+    bottom: 0 !important;
+    height: 26px !important;
+    padding: 0 3px !important;
+    .avg-class-txt {
+      font-size: 12px;
+    }
+    .avg-class-score {
+      margin-left: 10px !important;
+      font-size: 16px !important;
+    }
+  }
+}
+
+@media screen and (max-height: 852px) {
+  .card-project-info {
+    height: 120px !important;
+    .pro-item-key {
+      line-height: 20px !important;
+    }
+  }
+  .card-project-rate {
+    min-height: 44px !important;
+    .rate-txt {
+      font-size: 15px !important;
+      line-height: 24px !important;
+    }
+    .rate-description {
+      font-size: 12px !important;
+      line-height: 18px !important;
+    }
+  }
+}

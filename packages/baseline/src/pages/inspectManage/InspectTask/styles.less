@@ -1,0 +1,71 @@
+#inspectTask {
+  .disableCss {
+    color: rgba(0, 0, 0, 0.25);
+    cursor: no-drop;
+  }
+  .topSelect {
+    .rowClass {
+      display: flex;
+      width: 100%;
+      // margin-bottom: 20px;
+    }
+
+    .inpBox {
+      display: inline-block;
+      width: calc(100% / 4);
+      .comClass {
+        display: inline-block;
+        width: calc(100% - 80px);
+        height: 40px;
+        margin: 0 10px;
+        line-height: 40px;
+      }
+    }
+
+    .timerBox {
+      display: inline-flex;
+      align-items: center;
+      width: 70%;
+      .timeBox {
+        display: inline-block;
+        width: 35%;
+        :global {
+          .ant-picker {
+            margin-right: 0;
+          }
+        }
+      }
+      .dateSel {
+        display: inline-block;
+        width: 68px;
+        height: 40px;
+        margin-right: 10px;
+        // margin: 0 10px;
+        // margin-left: 10px;
+        color: #0013c1;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+        &:first-child {
+          margin-left: 10px;
+        }
+        &:hover {
+          background: #e9ebff;
+        }
+      }
+      .btnLight {
+        background: #e9ebff;
+      }
+    }
+    .selBtnBox {
+      display: inline-flex;
+      margin-left: 20px;
+      &::after {
+        display: inline-block;
+        clear: both;
+        content: '';
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.common-txt {
+  .vesionTxtClass {
+    .flex-row;
+
+    height: 43.97px;
+    margin-left: 10px;
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    mix-blend-mode: normal;
+    .vesionTxtLeftClass {
+      margin-right: 1vw;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .vesionTxtRightClass {
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+  .TxtGroupClass {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    .firstRow {
+      display: flex;
+      flex-flow: row nowrap;
+      width: max-content;
+      font-size: 10px;
+      line-height: 12px;
+      // transform: scale(0.71);
+    }
+  }
+}
+
+.head-bottom-common {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .leftBottomClass {
+    .flex-row;
+
+    justify-content: flex-start;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    mix-blend-mode: normal;
+  }
+
+  .common-txt;
+}
+
+.head-common-class {
+  .head-bottom-common;
+}
+.headBottomLeftClass {
+  flex-shrink: 0;
+  margin-left: 10px;
+
+  .leftBottomClass {
+    padding: 9px 1vw;
+  }
+}
+
+.headBottomClass {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  .flex-row;
+
+  justify-content: flex-start;
+  max-width: 100vw;
+  height: 60px;
+  background: #101010 !important;
+  backdrop-filter: blur(70px);
+
+  .buttonBgClass {
+    margin-left: 10px;
+    .bottomButton {
+      box-sizing: border-box;
+      width: 100%;
+      height: 40px;
+      background: rgba(55, 87, 255, 0.3);
+      border: 1px solid #3757ff;
+      border-radius: 2px;
+    }
+  }
+  .detect-span-class {
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+    width: 15.2vw;
+    // min-width: 292px;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(55, 87, 255, 0.1);
+    border-radius: 2px;
+  }
+  .fullbuttonClass {
+    img {
+      width: 80px;
+      height: 45.97px;
+    }
+  }
+  .buttonBgtClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #3757ff;
+    font-size: 24px;
+    background: rgba(55, 87, 255, 0.1);
+    border-radius: 2px;
+    opacity: 0.5;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .cuberbuttonClass {
+    background: rgba(55, 87, 255, 0.3) !important;
+    opacity: 1;
+    .txtDetectClass {
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+  .buttonClickClass {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .headButtonClass {
+    .flex-row;
+
+    justify-content: flex-start;
+  }
+  .imglogo {
+    height: 20px;
+  }
+}

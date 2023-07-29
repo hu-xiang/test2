@@ -1,0 +1,36 @@
+.container-box {
+  .top-head {
+    display: flex;
+    flex-flow: row nowrap;
+    .left-row {
+      width: 60%;
+      margin-right: 20px;
+    }
+    .right-btn-box {
+      display: inline-flex;
+      justify-content: flex-start;
+      button {
+        width: 68px;
+        height: 40px;
+      }
+      & > button:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+  :global {
+    .ant-table.ant-table-middle .ant-table-tbody > tr > td {
+      height: 72px;
+      padding: 12px 8px !important;
+    }
+  }
+}
+.item-class {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 这里是超出几行省略 */
+}

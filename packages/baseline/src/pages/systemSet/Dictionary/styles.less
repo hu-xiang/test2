@@ -1,0 +1,57 @@
+#dictionarySystem {
+  .dicBack {
+    display: flex;
+    width: 123px;
+    margin: 30px 0 0 20px;
+    cursor: pointer;
+
+    .backText {
+      padding-left: 10px;
+      color: #263141 !important;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 32px;
+    }
+  }
+  .dictDetail {
+    margin-top: 15px;
+  }
+
+  .topSelect {
+    .rowClass {
+      display: flex;
+      width: 100%;
+    }
+
+    .inpBox {
+      display: inline-flex;
+      align-items: center;
+      width: 25%;
+
+      .rowLabel {
+        display: inline-flex;
+        justify-content: end;
+        max-width: 100px;
+      }
+
+      .comClass {
+        display: inline-block;
+        width: calc(100% - 80px);
+        height: 40px;
+        margin: 0 10px;
+        line-height: 40px;
+      }
+    }
+
+    .selBtnBox {
+      display: inline-flex;
+      margin-left: 6px;
+
+      &::after {
+        display: inline-block;
+        clear: both;
+        content: '';
+      }
+    }
+  }
+}

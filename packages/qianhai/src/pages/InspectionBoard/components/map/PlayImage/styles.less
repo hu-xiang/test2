@@ -1,0 +1,48 @@
+.playImageBox {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  .leftPlayer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .totalDis {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 24px;
+  }
+}
+.playImg {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-size: 100% 100%;
+}
+.playLeftImg {
+  margin-right: 23px;
+  background: url('../../../../../../public/images/modal/prevButton.svg') no-repeat;
+}
+.playRightImg {
+  margin-left: 23px;
+  background: url('../../../../../../public/images/modal/nextPic.svg') no-repeat;
+}
+.playMiddleImg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../../../../../public/images/modal/playButton.svg') no-repeat;
+  background-size: 100% 100%;
+}
+.stopMiddleImg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../../../../../public/images/modal/stopButton.svg') no-repeat;
+  background-size: 100% 100%;
+}

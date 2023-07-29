@@ -1,0 +1,146 @@
+:global {
+  .manualToolMod {
+    width: 400px !important;
+    .ant-modal-body {
+      padding: 24px 20px 0 20px;
+    }
+    // .ant-select-single .ant-select-selector .ant-select-selection-item {
+    //   display: inline-block;
+    //   height: 40px;
+    //   line-height: 40px;
+    // }
+    // .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    //   height: 40px;
+    // }
+    // .ant-select:not(.ant-select-customize-input)
+    //   .ant-select-selector
+    //   .ant-select-selection-search-input {
+    //   height: 40px;
+    // }
+    .ant-modal-footer {
+      padding-top: 0 !important;
+      border-top: none;
+    }
+    .ant-input-number {
+      width: 100%;
+    }
+  }
+  .disBoxManu {
+    height: calc(100vh - 139px) !important;
+  }
+  .manuImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+  }
+}
+.container-box {
+  height: calc(100vh - 129px);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.selTreeBoxTen {
+  border-bottom: 1px solid rgba(220, 223, 230, 0.9);
+  :global {
+    .ant-tree-select-dropdown .ant-select-tree-list-holder-inner {
+      margin-top: 4px !important;
+    }
+  }
+  .selTreeAllOrNull {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: #0013c1;
+    }
+  }
+  .lightSelTree {
+    color: #0013c1;
+  }
+}
+.tenmMoveBox {
+  position: relative;
+  margin-top: -52px;
+  overflow: hidden;
+}
+#ManualAuditToolContainer {
+  .disBox {
+    display: inline-block;
+    width: calc(100% - 380px);
+    // height: 100%;
+    margin-top: 10px;
+    // padding: 10px;
+    vertical-align: top;
+    .disImgBox {
+      width: 100%;
+      height: calc(100% - 70px);
+      background: rgba(239, 241, 244, 0.6);
+    }
+    .btnBox {
+      text-align: center;
+    }
+  }
+  .disBox1 {
+    width: calc(100% - 270px);
+  }
+  .disListBox {
+    display: inline-block;
+    width: 380px;
+    height: 100%;
+    margin-top: 10px;
+    border-left: 1px solid rgba(220, 223, 223, 0.5);
+    .textBox {
+      padding: 10px 20px;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(220, 223, 223, 0.5);
+    }
+  }
+  .disListBox1 {
+    width: 270px;
+  }
+  .tableBox {
+    overflow: hidden;
+    :global {
+      .ant-table-content {
+        height: calc(100vh - 160px);
+      }
+      .ant-table-placeholder .ant-table-cell {
+        border: none;
+      }
+
+      .ant-table-body {
+        height: calc(100vh - 238px);
+        overflow-y: auto !important;
+        color: #666;
+      }
+      // .ant-table.ant-table-middle .ant-table-title,
+      // .ant-table.ant-table-middle .ant-table-footer,
+      // .ant-table.ant-table-middle tfoot > tr > th,
+      // .ant-table.ant-table-middle .ant-table-thead > tr > th,
+      // .ant-table.ant-table-middle tfoot > tr > td,
+      // .ant-table.ant-table-middle .ant-table-tbody > tr > td {
+      //   padding: 17px 8px;
+      // }
+    }
+  }
+  .selLight > span {
+    color: #0013c1 !important;
+  }
+  .cursor {
+    cursor: pointer;
+    user-select: none;
+    & > span {
+      width: auto !important;
+      &:hover {
+        color: #0013c1 !important;
+      }
+    }
+  }
+}
+.ManualAuditToolContainer2 {
+  height: calc(100vh - 129px) !important;
+  margin: 60px 20px 20px;
+}

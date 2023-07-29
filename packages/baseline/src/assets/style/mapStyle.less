@@ -1,0 +1,388 @@
+.clustContainer {
+  position: relative;
+  transform: scaleY(1.5);
+  transform-origin: center bottom;
+}
+
+.bottomFire {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background: rgba(255, 86, 86, 0.2);
+  border-radius: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotateX(60deg) translateX(-1%) translateY(75%);
+  filter: blur(3px);
+  content: '';
+}
+
+.containerBoxFire {
+  animation-name: flicker;
+  animation-duration: 3ms;
+  animation-timing-function: ease-in;
+  animation-delay: 200ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.topFire {
+  font-weight: 400;
+  font-size: 13px;
+  font-family: 'Bebas-Neue', Arial, sans-serif;
+  text-align: center;
+  transform: translateY(10%);
+}
+
+.clustFlame {
+  clip-path: polygon(47% 2%, 47% 2%, 57% 48%, 65% 84%, 72% 100%, 20% 100%, 29% 84%, 37% 48%);
+}
+
+.clustFire {
+  transform: translateX(10%);
+}
+
+.containerDot {
+  position: relative;
+}
+
+.carRadiusContainer {
+  position: relative;
+}
+
+.carDisClass {
+  position: relative;
+  width: 58px;
+  height: 52px;
+  // background: url('../../../public/images/map-car-online.svg') no-repeat;
+  background-size: 58px 52px;
+}
+
+.carOnlineClass {
+  background: url('../../../public/images/map-car-online.svg') no-repeat;
+  background-size: 58px 52px;
+}
+
+.carOnlineClass.carRevese {
+  background: url('../../../public/images/map-car-reverse.svg') no-repeat;
+  background-size: 58px 52px;
+}
+
+.carOffLineClass {
+  background: url('../../../public/images/map-car-offline.svg') no-repeat;
+  background-size: 58px 52px;
+}
+
+.pointClass {
+  position: relative;
+  width: 9px;
+  height: 4.5px;
+  background: #abc9e7;
+  border-radius: 100%;
+}
+
+.carSquare {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  width: 60px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.carReveseContainer {
+  .carSquare {
+    left: -45%;
+  }
+}
+
+.pointSquare {
+  position: absolute;
+  top: -65%;
+  left: -25px;
+  width: 60px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.dotClass {
+  position: absolute;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.dotSibClass {
+  position: absolute;
+  left: 5%;
+  height: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.sibClass1 {
+  animation: warn 2s ease-out infinite;
+}
+
+.sibClass2 {
+  animation: warn2 2s ease-out infinite;
+}
+
+.sibClass3 {
+  animation: warn3 2s ease-out infinite;
+}
+
+.sibClass4 {
+  animation: warn4 2s ease-out infinite;
+}
+
+@keyframes warn3 {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+}
+
+@keyframes warn4 {
+  50% {
+    transform: scale(0.3);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes warn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(0.3);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+}
+
+@keyframes warn2 {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(0.3);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: scale(0.3);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+.carTrailTxt {
+  color: #abc9e7;
+  font-size: 14px;
+}
+
+.carProcessBar {
+  box-sizing: border-box;
+  width: 100%;
+  height: 5px;
+  background: rgba(147, 151, 174, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 58px;
+  backdrop-filter: blur(30px);
+}
+
+.carLeftIcon {
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+.carTrailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 112px;
+
+  &.onlineBar {
+    .carProcessBar {
+      background: #3758ff;
+      backdrop-filter: blur(30px);
+    }
+
+    .carTrailTxt {
+      color: #abc9e7;
+    }
+
+    .carLeftIcon {
+      background: #24ae4a;
+    }
+  }
+
+  &.offLineBar {
+    .carProcessBar {
+      background: rgba(147, 151, 174, 0.5);
+      backdrop-filter: blur(30px);
+    }
+
+    .carTrailTxt {
+      color: rgba(171, 201, 231, 0.6);
+    }
+
+    .carLeftIcon {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.progressNow {
+  width: 60%;
+  height: 100%;
+}
+
+.cartop {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.stake-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: rgba(55, 219, 255, 0.3);
+  border-radius: 50%;
+
+  .stake-icon-inner {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: #37dbff;
+    border-radius: 50%;
+  }
+}
+
+.inspect-stake-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: #54a325;
+  border-radius: 50%;
+
+  .inspect-stake-icon-inner {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+  }
+}
+
+.inspect-stake-dark-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: #999;
+  border-radius: 50%;
+
+  .inspect-stake-icon-inner {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+  }
+}
+
+.stake-bg {
+  display: block;
+
+  // transform: rotate(-45deg);
+  // background: rgba(21, 24, 36, 0.8);
+  // border-radius: 4px;
+  &.left-transtion {
+    transform: rotate(-45deg) translateY(-10px) translateX(0);
+  }
+
+  &.right-transtion {
+    transform: rotate(-45deg) translateY(13px) translateX(10px);
+  }
+}
+
+.stake-name-class {
+  color: #37dbff;
+}
+
+.inspect-stake-name-class {
+  color: #000;
+  font-weight: 500;
+  opacity: 0.7;
+}

@@ -1,0 +1,23 @@
+.container {
+  .topHead {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    .leftRow {
+      width: calc(100% - 156px);
+      margin-right: 10px;
+    }
+    .rightBtnBox {
+      display: inline-flex;
+      justify-content: flex-end;
+      width: 156px;
+      button {
+        flex: 43.5%;
+        height: 40px;
+      }
+      & > button:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}

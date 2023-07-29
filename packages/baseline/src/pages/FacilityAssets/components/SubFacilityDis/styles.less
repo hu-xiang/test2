@@ -1,0 +1,49 @@
+.content-nums-box {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+}
+.fac-item-class {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  height: 33.33%;
+  .img-class {
+    width: 40px;
+    height: 40px;
+  }
+  .num-txt {
+    color: #abc9e7;
+    font-size: 20px;
+    font-family: 'Bebas-Neue', Arial, sans-serif;
+  }
+  .column-class {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: calc(100% - 54px);
+    margin-left: 14px;
+    .name-txt {
+      display: inline-block;
+      width: calc(100% - 5px);
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  &:nth-of-type(5) {
+    .img-class {
+      position: relative;
+      top: 5px;
+    }
+  }
+}

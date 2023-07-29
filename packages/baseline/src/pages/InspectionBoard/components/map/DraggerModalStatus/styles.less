@@ -1,0 +1,199 @@
+.carPanelClass {
+  .imgInfo {
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+  .imgCarInfo {
+    flex: 1;
+    margin-left: 20px;
+    .firstRowInfo {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: flex-start;
+      .speedBoxDot {
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+        background: #24ae4a;
+        border-radius: 100%;
+      }
+      .txtDevice {
+        color: #abc9e7;
+        font-size: 18px;
+        line-height: 22px;
+        opacity: 0.8;
+      }
+    }
+    .humanInfo {
+      display: flex;
+      flex-direction: column;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      line-height: 16px;
+      .humanInfoTxt {
+        line-height: 20px;
+      }
+      .rowHuman {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        .trailClass {
+          margin-left: 10px;
+          .trailTxtClass {
+            margin-right: 10px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .inspectInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  .carNewRowInfo {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 0 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+.map-dis-pop-modal {
+  .carColumnInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .dragRowInfo {
+    padding: 0 20px 0 20px;
+    .diseaseAddressClass {
+      width: inherit;
+      line-height: 24px;
+    }
+  }
+  .carPanelClass;
+}
+.draggerModalClass {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  width: 487px;
+  height: 280px;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  .dragHeadTitle {
+    position: relative;
+    height: 46px;
+    padding-left: 24px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .bgClass {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+  }
+  .carBgPanel {
+    background: rgba(147, 151, 174, 0.3);
+    border-radius: 18px 18px 0 0;
+    backdrop-filter: blur(30px);
+  }
+  .roadMonitoringBox {
+    width: 100%;
+    height: 119px !important;
+    margin-top: 4px;
+    padding: 0 10px 10px;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.8);
+    border-top: transparent;
+    &.planenessPanel {
+      border-radius: 0 0 18px 18px;
+    }
+  }
+  &.carModalClass {
+    height: 241px;
+  }
+
+  :global {
+    .ant-switch {
+      width: 27px;
+      min-width: 34px;
+      height: 8px !important;
+      line-height: 8px !important;
+    }
+    .ant-switch-handle {
+      top: -7px;
+      left: 0;
+    }
+    .ant-switch-handle::before {
+      background-color: rgba(55, 87, 255, 1);
+    }
+    .ant-switch.ant-switch-checked {
+      box-sizing: border-box;
+      background: rgba(55, 87, 255, 0.1);
+      border: 1px solid #3757ff;
+      border-radius: 13px;
+    }
+    .ant-switch-checked .ant-switch-handle {
+      left: calc(100% - 16px);
+    }
+  }
+}
+.modalRowTitle {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  .leftContent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  // .rightContent {
+
+  // }
+  .rightButton {
+    padding-right: 25px;
+  }
+  .modalTitleImg {
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    background: #3758ff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transform: rotate(-45deg);
+  }
+}
+
+.closeModalClass {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../../../../../public/images/modal/closeButton.svg') no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+.closeModalInfoClass {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../../../../../public/images/modal/closeButton.svg') no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  user-select: none;
+}

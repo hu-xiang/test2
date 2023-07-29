@@ -1,0 +1,141 @@
+.importClass {
+  :global {
+    .rowProgress {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .disableUploadClass {
+      cursor: not-allowed;
+    }
+    .ant-progress {
+      width: 60%;
+      margin-left: 10px;
+    }
+    .ant-modal-body .ant-space.ant-space-horizontal {
+      display: none;
+    }
+    .jsonUploadClass .ant-upload-list-item {
+      margin-top: 0;
+    }
+  }
+}
+.diseaseExportClass {
+  :global {
+    .ant-spin-nested-loading {
+      background-color: #eee;
+    }
+    .ant-spin-blur {
+      opacity: 0.7;
+    }
+  }
+}
+#container {
+  .topSelect {
+    .rowClass {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .mpgsRow {
+      .inpBox {
+        display: inline-block;
+        width: calc(100% / 5);
+        vertical-align: middle;
+        .comClass {
+          display: inline-block;
+          width: calc(100% - 80px);
+          height: 40px;
+          margin: 0 10px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    .commonRow {
+      .inpBox {
+        display: inline-block;
+        width: calc(100% / 4);
+        vertical-align: middle;
+        .comClass {
+          display: inline-block;
+          width: calc(100% - 80px);
+          height: 40px;
+          margin: 0 10px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    .timerBox {
+      display: inline-block;
+      width: calc(50% - 0px);
+      .timeBox {
+        display: inline-block;
+        width: calc(100% - 390px);
+        // min-width: 215px;
+        :global {
+          .ant-picker {
+            margin-right: 0;
+          }
+        }
+      }
+      .dateSel {
+        display: inline-block;
+        width: 48px;
+        height: 40px;
+        margin-right: 10px;
+        color: #0013c1;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+        &:first-child {
+          margin-left: 10px;
+        }
+        &:hover {
+          background: #e9ebff;
+        }
+      }
+      .btnLight {
+        background: #e9ebff;
+      }
+    }
+    .selBtnBox {
+      position: relative;
+      display: inline-block;
+      margin-left: 10px;
+      // float: right;
+      // &::after {
+      //   display: inline-block;
+      //   clear: both;
+      //   content: '';
+      // }
+    }
+  }
+  .topSelect1 {
+    height: 80px;
+    .timerBox {
+      margin: 0;
+    }
+  }
+  .toggleIcon {
+    position: absolute;
+    top: 50%;
+    z-index: 1100;
+    cursor: pointer;
+  }
+  .arrLeftIcon {
+    left: 0;
+  }
+  .arrRightIcon {
+    right: 10%;
+  }
+  .arrIconDisabled {
+    cursor: no-drop;
+    path {
+      opacity: 0.3;
+      fill: #999;
+    }
+  }
+}

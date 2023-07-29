@@ -1,0 +1,151 @@
+.regularProjectMap {
+  width: 100%;
+  height: 100%;
+
+  .backButton {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    .backTitle {
+      padding-right: 12px;
+      color: #263141;
+      font-weight: 700;
+      font-size: 16px;
+      // font-family: 'Roboto';
+      font-style: normal;
+    }
+  }
+
+  .footerContent {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 40px);
+    height: 314px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+
+    .footerTitleBox {
+      width: 100%;
+      height: 56px;
+      line-height: 56px;
+      background: #f6f6f9;
+      border-bottom: 1px solid rgba(220, 223, 230, 0.9);
+
+      .footerTitleContent {
+        margin-left: 20px;
+        color: #333;
+        font-size: 16px;
+      }
+    }
+
+    .selectContent {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+      line-height: 32px;
+
+      .rowSelect {
+        width: 140px;
+        margin-right: 10px;
+      }
+
+      .colorType {
+        display: inline-flex;
+        width: 8px;
+        height: 8px;
+        margin-right: 4px;
+      }
+
+      .colorTypeLetter {
+        padding-right: 18px;
+      }
+    }
+
+    .scoreContent {
+      display: flex;
+      margin: 0 10px;
+      overflow-x: scroll !important;
+      background: #fff;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #c0c0c0;
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          background: #7c7c7c;
+        }
+      }
+
+      .columnTitleContent {
+        .itemColumn {
+          width: 68px;
+          height: 48px;
+          color: #333;
+          font-size: 14px;
+          font-style: normal;
+          line-height: 48px;
+          text-align: center;
+          box-shadow: 0 1px 0 rgba(232, 232, 232, 0.25);
+        }
+
+        .firstColumn {
+          font-weight: 600;
+        }
+
+        .otherColumn {
+          font-weight: 400;
+        }
+      }
+
+      .columnContent {
+        width: 100% !important;
+
+        .scoreColumn {
+          min-width: 93px;
+          height: 48px;
+          box-shadow: 0 1px 0 rgba(232, 232, 232, 0.25);
+
+          div {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .unitStart {
+          color: #333;
+          font-weight: 600;
+          font-size: 14px;
+          font-style: normal;
+          line-height: 48px;
+          text-align: left;
+        }
+
+        .unitLast {
+          display: flex;
+          justify-content: space-between;
+          color: #333;
+          font-weight: 600;
+          font-size: 14px;
+          font-style: normal;
+          line-height: 48px;
+        }
+      }
+    }
+  }
+}

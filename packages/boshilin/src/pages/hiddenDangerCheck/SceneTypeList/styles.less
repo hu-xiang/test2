@@ -1,0 +1,122 @@
+.checkbox-class {
+  height: inherit;
+  :global {
+    .ant-checkbox-group-item {
+      width: 77px;
+      line-height: 40px;
+    }
+    .ant-checkbox-disabled .ant-checkbox-inner {
+      background-color: transparent !important;
+      border: 1px solid #d9d9d9 !important;
+    }
+  }
+}
+.scene-container {
+  .table-scene {
+    height: calc(100vh - 203px) !important;
+    :global {
+      .ant-table-content {
+        height: calc(100vh - 259px);
+      }
+
+      .ant-table-body {
+        height: calc(100vh - 315px);
+      }
+      .ant-empty-normal {
+        height: calc(100vh - 349px) !important;
+      }
+    }
+  }
+  .scene-tabs {
+    margin-top: 26px;
+    :global {
+      .ant-tabs-nav-wrap {
+        margin: 0 20px;
+        border-bottom: 1px solid #dcdfe6;
+      }
+      .ant-tabs-top > .ant-tabs-nav {
+        margin-bottom: 0;
+      }
+      .ant-tabs-tab {
+        padding: 8px 0;
+        font-weight: 500;
+        font-family: 'PingFang SC', Arial, sans-serif;
+        &.ant-tabs-tab-active {
+          .ant-tabs-tab-btn {
+            color: rgba(0, 19, 193, 1);
+          }
+        }
+        &:hover {
+          color: rgba(0, 19, 193, 1);
+        }
+      }
+      .ant-tabs-ink-bar {
+        background-color: rgba(0, 19, 193, 1);
+      }
+    }
+  }
+}
+.row-top {
+  margin-top: 0 !important;
+}
+.cite-item-class {
+  color: #0013c1;
+  cursor: pointer;
+}
+.container-box {
+  .top-head {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 10px;
+    .left-row {
+      width: 60%;
+      margin-right: 20px;
+    }
+    .right-btn-box {
+      display: inline-flex;
+      justify-content: flex-start;
+      button {
+        width: 68px;
+        height: 40px;
+      }
+      & > button:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+  .check-table {
+    height: calc(100vh - 303px);
+    :global {
+      .ant-table-content {
+        height: calc(100vh - 359px);
+        overflow: auto auto !important;
+      }
+
+      .ant-table-body {
+        height: calc(100vh - 395px) !important;
+      }
+      .ant-empty-normal {
+        height: calc(100vh - 464px) !important;
+      }
+    }
+  }
+  .table-no-button {
+    height: calc(100vh - 243px) !important;
+    margin-top: 0;
+    :global {
+      .ant-table-body {
+        height: calc(100vh - 280px) !important;
+        max-height: calc(100vh - 357px) !important;
+      }
+      .ant-table.ant-table-middle .ant-table-tbody > tr > td {
+        padding: 16px 8px 17px;
+      }
+      .ant-table-content {
+        height: calc(100vh - 304px) !important;
+      }
+      .ant-empty-normal {
+        height: calc(100vh - 315px);
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.BasicInfo {
+  .formInfo {
+    .formRowInfo {
+      display: flex;
+      margin-bottom: 20px;
+      :global {
+        .ant-input {
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+    .formItemInfo {
+      display: flex;
+      align-items: center;
+      width: 25%;
+      .itemLabel {
+        width: 56px;
+        color: #666;
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+        text-align: right;
+      }
+      .itemInput {
+        width: calc(100% - 86px);
+        margin-right: 20px;
+        margin-left: 10px;
+        :global {
+          .greenTxt {
+            color: #54a325;
+          }
+          .redTxt {
+            color: #f00;
+          }
+        }
+      }
+    }
+  }
+  .mapInfo {
+    width: 100%;
+    height: calc(100vh - 368px);
+    padding: 20px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+  }
+}

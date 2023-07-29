@@ -1,0 +1,46 @@
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.evationContainerClass {
+  height: 100%;
+  :global {
+    .modalSpeDiv {
+      position: relative;
+      top: 104px;
+      display: block;
+      width: 483px;
+      height: 0;
+      margin: 0 auto;
+      overflow: hidden;
+      .ant-modal-root {
+        position: relative;
+      }
+      .ant-modal-wrap {
+        top: 100px;
+        width: 526px;
+        height: 294px;
+        margin: 0 auto;
+        overflow: hidden;
+        .ant-modal {
+          top: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.card-item-empty {
+  height: 100%;
+}
+.card-line-chart {
+  height: 100%;
+}
+.ring-box {
+  position: relative;
+  height: 100%;
+}

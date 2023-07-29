@@ -1,0 +1,40 @@
+#KeyScene {
+  .topSelect {
+    .rowClass {
+      display: flex;
+      width: 100%;
+    }
+
+    .inpBox {
+      display: inline-flex;
+      align-items: center;
+      width: 30%;
+
+      .rowLabel {
+        display: inline-flex;
+        justify-content: end;
+        max-width: 100px;
+      }
+      .rowLabel1 {
+        min-width: 85px;
+      }
+
+      .comClass {
+        display: inline-block;
+        width: calc(100% - 80px);
+        height: 40px;
+        margin: 0 10px;
+        line-height: 40px;
+      }
+    }
+    .selBtnBox {
+      display: inline-flex;
+      margin-left: 5px;
+      &::after {
+        display: inline-block;
+        clear: both;
+        content: '';
+      }
+    }
+  }
+}

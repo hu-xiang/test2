@@ -1,0 +1,393 @@
+.mapMod {
+  width: 90% !important;
+  height: 80vh !important;
+  :global {
+    .ant-modal-body {
+      padding: 0;
+    }
+    .amap-marker-label {
+      border: none;
+    }
+    .ant-modal-close {
+      top: -60px;
+      right: -45px;
+      color: #ccc;
+      .ant-modal-close-x {
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .mapBig2 {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+.DiseaseCard {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  .paths4 {
+    path {
+      opacity: 0.3 !important;
+      fill: #999 !important;
+    }
+  }
+  .paths5 {
+    path {
+      opacity: 0.3;
+      fill: #fff;
+    }
+  }
+  .disables {
+    .paths4;
+    &:hover {
+      cursor: not-allowed !important;
+      path {
+        opacity: 0.3 !important;
+        fill: #999 !important;
+      }
+    }
+  }
+  .distopBoxText2 {
+    position: absolute;
+    top: 45%;
+    left: -175px;
+    z-index: 9999;
+    cursor: pointer;
+    .paths5;
+    &:hover {
+      path {
+        opacity: 0.5;
+        fill: #fff;
+      }
+    }
+  }
+
+  .distopBoxText3 {
+    position: absolute;
+    top: 45%;
+    right: 35px;
+    z-index: 9999;
+    cursor: pointer;
+    .paths5;
+    &:hover {
+      path {
+        opacity: 0.5;
+        fill: #fff;
+      }
+    }
+  }
+  .iconBox {
+    height: 44px;
+    margin-top: 18px;
+    .topBoxText {
+      margin-right: 8px;
+      color: #263141 !important;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 31px;
+    }
+    .leftIconBox {
+      display: flex;
+      justify-content: space-between;
+      float: left;
+      cursor: pointer;
+      // height: 88px;
+      // line-height: 88px;
+      .topBoxText1 {
+        margin-left: 8px;
+      }
+      &:hover {
+        .topBoxText {
+          color: #000 !important;
+        }
+        path {
+          fill: #111;
+        }
+      }
+    }
+    .disabled {
+      color: #999 !important;
+      cursor: not-allowed;
+    }
+    .rightIconBox {
+      display: flex;
+      justify-content: space-between;
+      float: right;
+      cursor: pointer;
+      // height: 88px;
+      // line-height: 88px;
+      .topBoxText2 {
+        &:hover {
+          color: #000 !important;
+        }
+      }
+      .disabled {
+        color: #999 !important;
+        cursor: not-allowed;
+        &:hover {
+          color: #999 !important;
+        }
+      }
+      .topBoxText3:hover {
+        .topBoxText {
+          color: #000 !important;
+        }
+        path {
+          fill: #111;
+        }
+        .disabled {
+          color: #999 !important;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  .container {
+    height: calc(100vh - 130px);
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 #e8e8e8;
+    .Toptitle {
+      height: 68px;
+      padding: 20px 0 0;
+      font-size: 20px;
+      line-height: 48px;
+    }
+    .scrollBox {
+      height: calc(100vh - 198px);
+      margin-right: -10px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 8px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #c0c0c0;
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        &:hover {
+          background: #7c7c7c;
+        }
+      }
+      .infoBox {
+        padding: 0 20px;
+        .toptitle {
+          height: 48px;
+          color: #000;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 48px;
+        }
+
+        .inpBox {
+          display: inline-block;
+          width: calc((100% - 60px) / 4);
+          color: #666;
+          text-align: right;
+          :global {
+            .ant-input {
+              width: calc(100% - 96px);
+              height: 40px;
+              margin-left: 10px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              border-radius: 4px;
+            }
+            .ant-input[disabled] {
+              color: #000;
+              background: rgba(0, 0, 0, 0.02);
+              border: 1px solid #d8d8d8;
+            }
+          }
+        }
+        .row-class {
+          & > .inpBox:not(:last-child) {
+            margin-right: 20px;
+          }
+          &:not(:first-of-type) {
+            margin-top: 20px;
+          }
+        }
+        .customRowCls {
+          margin-top: 10px !important;
+        }
+      }
+      .tabBox {
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        .txtBox {
+          height: 40px;
+          margin-bottom: 10px;
+          color: #000;
+          font-weight: 600;
+          line-height: 40px;
+        }
+        .tableBox {
+          max-height: calc(100vh - 460px);
+          margin-bottom: 10px;
+          :global {
+            .ant-image {
+              display: block;
+              width: 58px;
+              height: 47px;
+              overflow: hidden;
+            }
+            .ant-image-mask {
+              width: 58px;
+              height: 46px;
+            }
+            .ant-pagination {
+              padding-right: 20px;
+            }
+            .ant-table-thead .ant-table-cell {
+              color: #333 !important;
+              font-weight: 600 !important;
+              background: #f4f8ff;
+            }
+            .ant-table-body {
+              max-height: calc(100vh - 544px);
+              overflow-y: auto !important;
+              color: #666;
+            }
+            .ant-empty-normal {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              max-height: calc(100vh - 586px);
+              margin: 0;
+            }
+          }
+        }
+        .noDataTable {
+          :global {
+            tr {
+              td {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+        // .checkBtn {
+        //   position: absolute;
+        //   bottom: 8px;
+        //   width: 108px;
+        //   height: 40px;
+        // }
+      }
+      .checkBtnWrap {
+        margin-top: -20px;
+        padding: 0 20px 20px;
+      }
+      .inpBox.inpLongBox {
+        text-align: right;
+        :global {
+          .ant-input {
+            width: calc(100% - 94px);
+          }
+        }
+      }
+      .imgAndMapBox {
+        padding: 0 20px;
+        .toptitle {
+          height: 48px;
+          margin: 13px 0 6px;
+          color: #000;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 48px;
+        }
+        .txtBox {
+          height: 34px;
+          color: #000;
+        }
+        .leftImg {
+          display: inline-block;
+          width: 340px;
+          .imgBox {
+            width: 340px;
+            height: 376px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #dcdfe6;
+            border-radius: 4px;
+            opacity: 0.95;
+            .txt {
+              display: inline-block;
+              width: 50%;
+            }
+
+            .imgBigs {
+              width: 300px;
+              height: 300px;
+            }
+          }
+        }
+        .rightMap {
+          display: inline-block;
+          width: calc(100% - 420px);
+          padding-left: 20px;
+          vertical-align: top;
+          .mapBigs2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            // height: 300px;
+            height: 376px;
+            border: 1px solid #dcdfe6;
+            :global {
+              .ant-empty-image {
+                height: 75px !important;
+                margin-top: -40px;
+                margin-bottom: 0 !important;
+              }
+              .ant-empty-description {
+                color: #999 !important;
+                // font-size: 12px;
+              }
+            }
+          }
+          .mapBox {
+            width: 100%;
+            height: 376px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #dcdfe6;
+            border-radius: 4px;
+            opacity: 0.95;
+            .mapBigs {
+              width: 100%;
+              height: 300px;
+              border: 1px solid #dcdfe6;
+            }
+            :global {
+              .amap-container img {
+                width: 25px !important;
+                height: 34px !important;
+              }
+              .amap-marker-label {
+                width: 230px;
+                padding: 6px;
+                overflow: hidden;
+                white-space: normal;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

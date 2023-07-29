@@ -1,0 +1,125 @@
+// .landModal {
+//   :global {
+//     .ant-picker,
+//     .ant-input,
+//     .ant-form-item-label > label,
+//     .ant-select .ant-select-selector,
+//     .ant-btn {
+//       height: 40px !important;
+//     }
+
+//     .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+//     .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+//       height: 40px !important;
+//       line-height: 40px !important;
+//     }
+
+//     .ant-input[disabled] {
+//       color: #000 !important;
+//       background-color: rgba(0, 0, 0, 0.02);
+//       border-color: #d8d8d8;
+//     }
+//   }
+// }
+
+#container {
+  .topSelect {
+    .rowClass {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .inpBox {
+      display: inline-block;
+      width: calc(100% / 4);
+
+      // :global {
+      //   .ant-select-selection-overflow {
+      //     height: 32px;
+      //     line-height: 32px;
+
+      //     .ant-select-selection-overflow-item {
+      //       height: 32px;
+      //       line-height: 32px;
+
+      //       .ant-select-selection-item {
+      //         height: 32px;
+      //         margin-top: 0;
+      //         line-height: 32px;
+
+      //         .ant-select-selection-item-remove > .anticon {
+      //           vertical-align: 0;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+
+      .comClass {
+        display: inline-block;
+        width: calc(100% - 80px);
+        height: 40px;
+        margin: 0 10px;
+        line-height: 40px;
+      }
+    }
+
+    .timerBox {
+      display: flex;
+      align-items: center;
+      width: 45%;
+      min-width: 700px;
+
+      .timeBox {
+        display: flex;
+        width: 50%;
+
+        :global {
+          .ant-picker {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .labelBox {
+        display: inline-flex;
+        width: 75px;
+      }
+
+      .dateSel {
+        display: inline-block;
+        width: 68px;
+        height: 40px;
+        margin-right: 10px;
+        color: #0013c1;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:first-child {
+          margin-left: 10px;
+        }
+
+        &:hover {
+          background: #e9ebff;
+        }
+      }
+
+      .btnLight {
+        background: #e9ebff;
+      }
+
+      .selBtnBox {
+        display: flex;
+        margin-left: 20px;
+
+        &::after {
+          display: inline-block;
+          clear: both;
+          content: '';
+        }
+      }
+    }
+  }
+}

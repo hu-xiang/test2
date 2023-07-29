@@ -1,0 +1,48 @@
+.uploadPic {
+  :global {
+    .ant-modal-content {
+      // width: 1046px !important;
+      max-height: calc(100vh - 45px);
+      padding-bottom: 0;
+    }
+
+    .ant-upload-select-picture-card,
+    .ant-upload-list-picture-card-container {
+      width: 120px;
+      height: 120px;
+    }
+
+    .ant-upload-list-picture-card .ant-upload-list-item-thumbnail,
+    .ant-upload-list-picture-card .ant-upload-list-item-thumbnail img {
+      height: 120px;
+      object-fit: fill !important;
+    }
+
+    .ant-upload-list-picture-card .ant-upload-list-item,
+    .ant-upload-list-picture-card .ant-upload-list-item-thumbnail,
+    .ant-upload-list-picture-card
+      .ant-upload-list-item-thumbnail
+      img
+      .ant-upload-list-picture
+      .ant-upload-list-item {
+      padding: 0;
+      border: 0;
+    }
+
+    .ant-upload-list-picture-card .ant-upload-list-item-info {
+      border-radius: 6px;
+    }
+
+    .ant-btn-sm,
+    .ant-btn {
+      background: none;
+      border: 0;
+    }
+
+    .ant-btn-sm:hover,
+    .ant-btn:hover {
+      background: none;
+      border: 0;
+    }
+  }
+}

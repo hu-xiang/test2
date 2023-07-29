@@ -1,0 +1,736 @@
+:global {
+  .dataCrapAddress {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: #fff;
+    transform: translateY(-10px);
+  }
+
+  .ant-form-item-label {
+    label {
+      &::after {
+        content: ' ';
+      }
+    }
+  }
+
+  .sceneNameItem {
+    .ant-form-item-label {
+      text-align: left;
+    }
+  }
+
+  .createOrEditModalWrapper {
+    .ant-select .ant-select-selector input {
+      width: 90%;
+      height: auto !important;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+
+    .ant-input-group-addon {
+      display: none;
+    }
+
+    .anticon-close-circle {
+      transform: translateX(-50px);
+    }
+
+    .searchItem {
+      position: relative;
+
+      .searchIcon {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        z-index: 10;
+      }
+    }
+
+    // .ant-form-item-label {
+    //   label {
+    //     &::after {
+    //       content: ' ';
+    //     }
+    //   }
+    // }
+
+    .ant-select-arrow {
+      display: none !important;
+    }
+  }
+
+  .baseLineWrapper.page-list-common .page-table-one-box {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .hiddenScenarioWrapper.page-list-common .page-table-one-box {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+.createOrEditModalWrapper {
+  .uploadJsonFormItem {
+    height: auto;
+  }
+
+  .uploadFileListWrapper {
+    // position: absolute;
+    // top: 10px;
+    // left: 116px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 12px;
+
+    // width: 50%;
+    .fileItem {
+      display: flex;
+      margin-bottom: 18px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .fileName {
+    flex: 1;
+    padding-left: 6px;
+    color: #0013c1;
+  }
+
+  .uploadDel {
+    cursor: pointer;
+
+    .uploadIconActive {
+      display: none;
+    }
+
+    &:hover {
+      .uploadIconActive {
+        display: inline-block;
+      }
+
+      .uploadIcon {
+        display: none;
+      }
+    }
+  }
+}
+
+.fixValidateFormItem {
+  position: absolute;
+  top: 34%;
+  left: 19%;
+  z-index: 100;
+  width: 400px;
+}
+
+.rowButton {
+  button:first-child {
+    margin-right: 20px;
+  }
+
+  margin-bottom: 20px;
+}
+
+.customEmptyImg {
+  width: 100%;
+  min-height: 200px;
+}
+
+.backList {
+  display: inline-block;
+  cursor: pointer;
+  span {
+    font-weight: 700;
+  }
+}
+
+// 隐患点排查
+.spotCheckModal {
+  // max-width: 1295px;
+  :global {
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+
+    .ant-tabs-nav-wrap {
+      padding-left: 20px;
+    }
+
+    .ant-tabs-content-holder {
+      padding-left: 20px;
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #0013c1;
+    }
+
+    .ant-tabs-ink-bar {
+      background: #0013c1;
+    }
+  }
+}
+
+// 场景列表
+.hiddenScenarioWrapper {
+  padding: 30px 20px 20px;
+
+  :global {
+    .ant-image {
+      padding: 0 !important;
+    }
+  }
+
+  .handleBtns {
+    margin: 20px 0;
+
+    button {
+      margin-right: 20px;
+    }
+  }
+
+  .tabOpsDisabled {
+    color: #c7bfbf !important;
+    cursor: no-drop;
+  }
+}
+
+.dataCropModalWrapper {
+  .infoWindow {
+    padding: 16px;
+    background-color: #fff;
+  }
+
+  .infoWindowBtn {
+    padding-top: 9px;
+    text-align: right;
+
+    :global {
+      button {
+        height: 22px;
+        line-height: 20px;
+
+        &:first-child {
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+}
+.spotTypeTabs {
+  flex: 1;
+  .tabItemWrapper {
+    margin-top: -6px;
+    padding-left: 10px;
+  }
+  .tabRadioItem {
+    margin-bottom: 50px;
+    :global {
+      .ant-form-item-row {
+        flex-direction: column;
+        align-items: baseline;
+      }
+    }
+  }
+}
+
+// 项目排查列表
+.baseListWrapper {
+  padding: 36px 20px 20px;
+
+  .rowClass {
+    // display: flex;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .inpBox {
+    // flex: 1;
+    // vertical-align: middle;
+    display: inline-block;
+    width: calc(100% / 4);
+
+    .comClass {
+      display: inline-block;
+      width: calc(100% - 80px);
+      height: 40px;
+      margin: 0 10px;
+      line-height: 40px;
+    }
+  }
+
+  .timerBox {
+    // display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    width: 70%;
+
+    .timeBox {
+      display: inline-block;
+      width: 30%;
+      min-width: 215px;
+
+      :global {
+        .ant-picker {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .dateSel {
+      display: inline-block;
+      width: 68px;
+      height: 40px;
+      margin-right: 10px;
+      color: #0013c1;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:first-child {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        background: #e9ebff;
+      }
+    }
+
+    .btnLight {
+      background: #e9ebff;
+    }
+  }
+
+  .selBtnBox {
+    display: inline-flex;
+
+    button:first-child {
+      margin: 0 20px;
+    }
+  }
+}
+
+// 详情页
+.detailsWrapper {
+  padding: 30px 20px 20px;
+
+  .dataDetail {
+    padding-bottom: 30px;
+  }
+
+  .baseInfoContent {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      display: flex;
+      flex: 0 0 25%;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .label {
+      flex: 0 0 90px;
+      padding-right: 10px;
+      color: #666;
+      text-align: right;
+    }
+
+    .val {
+      flex: 1;
+      max-width: 298px;
+
+      input {
+        height: 40px;
+      }
+    }
+  }
+
+  .dataDetailInfo {
+    display: flex;
+    margin-bottom: 20px;
+
+    .upList {
+      display: flex;
+      margin-right: 80px;
+      color: #000;
+
+      .label {
+        margin-right: 10px;
+      }
+    }
+
+    .downList {
+      display: flex;
+      flex: 1;
+      color: #000;
+
+      .label {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .detailContentWrapper {
+    margin-top: 16px;
+    padding: 20px;
+    background-color: #fff;
+
+    .detailsContentInner {
+      padding: 0 20px;
+    }
+  }
+
+  .subTitle {
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .typeTitle {
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: 600;
+  }
+
+  .lineTitle {
+    margin: 30px 0;
+    color: #000;
+    font-size: 16px;
+  }
+
+  .dataDetailContent {
+    padding: 20px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    opacity: 0.95;
+  }
+
+  .chartWrapper {
+    max-width: 80%;
+    margin-bottom: 60px;
+  }
+
+  .detailPageMapArea {
+    width: 100%;
+    height: 100% !important;
+    min-height: 260px;
+    overflow: hidden;
+  }
+}
+
+.dataCropContent {
+  position: relative;
+  height: 600px;
+
+  .optLayer {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+
+    .opBtn {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 12px 72px;
+      font-size: 14px;
+      line-height: 16px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .DataCropMapArea {
+    width: 100%;
+    height: 100% !important;
+    min-height: 656px;
+    overflow: hidden;
+  }
+
+  .imgPos {
+    position: relative;
+
+    .closeIcon {
+      position: absolute;
+      top: -53px;
+      right: -194px;
+      z-index: 5;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+    }
+
+    .mapCropImg {
+      width: 200px;
+      height: 108px;
+      border: none;
+    }
+  }
+}
+
+.utilsLayer {
+  & span {
+    margin: 0 10px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .graphicType {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 11px 8px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    span {
+      padding: 20px 0;
+      &:first-child {
+        padding: 4px 0 20px 0;
+      }
+      &:last-child {
+        padding: 20px 0 4px 0;
+      }
+    }
+
+    .graphicIcon {
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 20px;
+        left: -5px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: rgba(55, 87, 255, 0.5);
+        border-radius: 2px;
+        content: '';
+      }
+      &.startIcon::before {
+        top: 5px;
+      }
+    }
+  }
+}
+
+.canvasWrapper {
+  // width: 929px;
+  height: 100%;
+  // border: 1px solid green;
+}
+
+.dataCropImgWrapper {
+  width: 397px;
+  height: 120px;
+  cursor: pointer;
+
+  .cropImgTip {
+    width: 104px;
+    height: 104px;
+    line-height: 104px;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #dcdfe6;
+    border-radius: 2px;
+  }
+}
+
+.customFormItem {
+  height: auto !important;
+}
+
+// 场景排查
+.ScenarioCheckWrapper {
+  padding: 20px;
+
+  .sceneCheckContentWrapper {
+    margin-top: 14px;
+    background-color: #fff;
+  }
+
+  .sceneName {
+    padding: 20px;
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+    // box-shadow: 0px 1px 0px #E8E8E8;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .questionDetail {
+    min-height: 200px;
+    padding: 16px 20px;
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  .questionTitle {
+    padding: 12px 20px;
+    font-weight: 700;
+    background: #f6f6f6;
+  }
+
+  .sceneContent {
+    display: flex;
+    height: calc(100vh - 178px);
+    .sceneTreeWrapper {
+      flex: 3;
+      min-height: 300px;
+      max-height: 500px;
+      padding-top: 10px;
+      overflow-y: auto;
+    }
+
+    .sceneQuestions {
+      flex: 2;
+    }
+
+    .navSideLeft {
+      display: flex;
+      flex: 0 0 320px;
+      flex-direction: column;
+    }
+
+    .mapArea {
+      position: relative;
+      flex: 1;
+      height: 100%;
+
+      .sceneImgs {
+        position: absolute;
+        left: 50%;
+        z-index: 2;
+        display: flex;
+        width: 96.8%;
+        padding: 10px;
+        overflow-x: auto;
+        background-color: #fff;
+        transform: translate(-50%, 10px);
+
+        .sceneImg {
+          position: relative;
+          flex: 1;
+          margin-right: 6px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          :global {
+            .ant-image {
+              width: 100%;
+            }
+          }
+
+          .sceneImgIndex {
+            position: absolute;
+            left: 50%;
+            z-index: 1;
+            padding: 9px 35px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 22px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 100px;
+            transform: translate(-50%, 10px);
+          }
+
+          .sceneImgItme {
+            width: 100%;
+            max-height: 240px;
+          }
+        }
+      }
+
+      .sceneOpBtns {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        z-index: 1;
+        transform: translateX(-50%);
+
+        button {
+          margin-right: 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .sceneMap {
+    width: 100%;
+    height: 100% !important;
+    min-height: 300px;
+    overflow: hidden;
+  }
+
+  .qItem {
+    margin-bottom: 12px;
+
+    .qLabel {
+      margin: 0 10px;
+    }
+  }
+}
+
+// 点位排查
+.spotCheckWrapper {
+  display: flex;
+
+  .sourceImg {
+    position: relative;
+    // flex: 0 0 929px;
+
+    .posLayer {
+      position: absolute;
+      left: 50%;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 100px;
+      transform: translate(-50%, 10px);
+
+      span {
+        display: inline-block;
+        width: 110px;
+      }
+
+      .activeBtn {
+        padding: 9px 46px;
+        color: #fff;
+        background: rgba(55, 87, 255, 0.8);
+        border-radius: 100px;
+        cursor: pointer;
+      }
+
+      .commonBtn {
+        padding: 9px 46px;
+        color: #fff;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+}

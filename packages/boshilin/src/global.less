@@ -1,0 +1,26 @@
+// @import '~antd/es/style/themes/default.less';
+@import '../../baseline/src/global.less';
+
+#root {
+  height: 99%;
+}
+.flicker-icon {
+  display: block;
+  width: 22px;
+  height: 26px;
+  background: url('../public/images/icon-hidden.svg') no-repeat;
+  background-size: 100% 100%;
+  animation: twinkling 1s infinite;
+  animation-delay: 0;
+}
+@keyframes twinkling {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

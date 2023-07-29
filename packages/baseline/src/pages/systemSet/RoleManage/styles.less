@@ -1,0 +1,209 @@
+:global {
+  // .crturoleipt.ant-modal .ant-select-selector {
+  //   height: 40px;
+  // }
+
+  .crturoleipt.ant-modal {
+    width: 500px !important;
+
+    .ant-modal-content {
+      width: 500px;
+      margin: auto;
+      .ant-input {
+        height: 40px;
+      }
+
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+    .ant-form-item {
+      height: inherit;
+    }
+  }
+
+  .cutroleipt.ant-modal {
+    min-width: 1150px !important;
+
+    .ant-tree {
+      max-height: 392px;
+      overflow-y: auto;
+    }
+    .ant-table-thead > tr > th {
+      background: #f4f8ff !important;
+    }
+    .ant-modal-content {
+      min-width: 1000px;
+      margin: auto;
+      .ant-modal-footer {
+        text-align: right;
+      }
+      .ant-modal-body {
+        min-height: 482px;
+        padding: 0 24px;
+        .treetop {
+          padding: 24px 0;
+        }
+        .ant-table {
+          margin-top: 24px;
+        }
+      }
+    }
+
+    .ant-table-body {
+      height: 392px;
+      // overflow-y: auto !important;
+    }
+    .ant-table-placeholder {
+      height: 392px;
+    }
+  }
+  .cutrole-table {
+    .ant-empty-normal {
+      height: calc(100vh - 535px);
+    }
+  }
+}
+.crtmod {
+  .fileupbox {
+    height: 0 !important;
+    border: 0 !important;
+  }
+  :global {
+    .ant-upload-list-item-card-actions .ant-upload-list-item-card-actions-btn {
+      background: #f5f5f5 !important;
+      &:hover,
+      &:focus {
+        border-color: #f5f5f5;
+        // color: #3345e7 !important;
+      }
+    }
+    .ant-upload-list-item-card-actions .anticon {
+      color: #999;
+      &:hover {
+        color: #3345e7;
+      }
+    }
+    .ant-form-item-control-input {
+      min-height: 0;
+    }
+  }
+}
+.updelwaper {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  margin-top: 5px;
+  .uplodelbox {
+    // display: flex;
+    // justify-content: space-between;
+    padding: 1px 5px;
+    color: #0013c1;
+    &:hover {
+      background: #f6f7f9;
+    }
+    .uplodel {
+      float: right;
+      color: #999;
+      cursor: pointer;
+      :hover {
+        color: #0013c1;
+      }
+    }
+  }
+}
+#container {
+  height: 100%;
+  padding: 10px;
+  // :global {
+  //   .usertable {
+  //     height: calc(100vh - 127px);
+  //     background: #fff;
+  //     // .ant-table-thead > tr > th {
+  //     //   // right: 0 !important;
+  //     //   font-weight: bold;
+  //     // }
+  //     // .ant-table-thead {
+  //     //   color: #333;
+  //     // }
+  //     // .ant-table.ant-table-middle .ant-table-title,
+  //     // .ant-table.ant-table-middle .ant-table-footer,
+  //     // .ant-table.ant-table-middle tfoot > tr > th,
+  //     // .ant-table.ant-table-middle tfoot > tr > td,
+  //     // .ant-table.ant-table-middle .ant-table-thead > tr > th,
+  //     // .ant-table.ant-table-middle .ant-table-tbody > tr > td {
+  //     //   padding: 17px 8px 16px;
+  //     // }
+  //     .ant-table-body {
+  //       height: calc(100vh - 218px);
+  //       overflow-y: auto !important;
+  //     }
+
+  //     .ant-table-pagination.ant-pagination {
+  //       margin: 0;
+  //       padding: 10px 10px 10px 0;
+  //     }
+  //     .ant-table-content {
+  //       height: calc(100vh - 160px) !important; //与表格滚动条设置对应
+  //       // overflow-y: auto !important;
+  //       color: #666;
+  //     }
+  //     .ant-table-empty {
+  //       .ant-table-content {
+  //         //无数据时调整滚动条位置
+  //         height: calc(100vh - 120px) !important;
+  //         // max-height: calc(100vh - 110px) !important;
+  //       }
+  //     }
+  //     .ant-table-placeholder .ant-table-cell {
+  //       max-width: 1000px;
+  //       height: calc(100vh - 190px) !important; //比表格滚动条设置要小，不然无数据时也有滚动条
+  //       border-bottom: none;
+  //     }
+  //   }
+  // }
+
+  .usertop {
+    height: 40px;
+    margin-bottom: 10px;
+    .usertoptxt {
+      display: inline-block;
+      margin-top: 5px;
+      color: #333;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .usertopsel {
+      float: right;
+      :global {
+        .ant-btn-primary.ant-input-search-button {
+          box-shadow: none;
+        }
+      }
+      // :global {
+      // .usersel {
+      // margin-top: 1px;
+      // margin-right: 10px;
+      // border-radius: 4px;
+      // .ant-input-affix-wrapper {
+      //   height: 38px;
+      // }
+
+      // .ant-input-search-button {
+      //   height: 38px;
+      //   font-size: 16px;
+      // }
+      // .common-serch-input;
+      // }
+      // .usertopadd.ant-btn-primary {
+      //   // height: 40px;
+      //   margin-right: 10px;
+      //   border-radius: 4px;
+      // }
+      // }
+    }
+  }
+}

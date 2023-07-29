@@ -1,0 +1,113 @@
+.mapMod {
+  width: 90% !important;
+  height: 80vh !important;
+  :global {
+    .ant-modal-body {
+      padding: 0;
+    }
+    .amap-marker-label {
+      border: none;
+    }
+    .ant-modal-close {
+      top: -60px;
+      right: -45px;
+      color: #ccc;
+      .ant-modal-close-x {
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .mapBig2 {
+    width: 100%;
+    height: 80vh;
+  }
+}
+.mapLocation {
+  display: inline-block;
+  // width: calc(100% - 420px);
+  width: 100%;
+  vertical-align: top;
+
+  .mapBigs2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // height: 300px;
+    // height: 376px;
+    border: 1px solid #dcdfe6;
+
+    :global {
+      .ant-empty-image {
+        height: 75px !important;
+        margin-top: -40px;
+        margin-bottom: 0 !important;
+      }
+
+      .ant-empty-description {
+        color: #999 !important;
+        // font-size: 12px;
+      }
+    }
+  }
+
+  .mapBox {
+    width: 100%;
+    // height: 376px;
+    // padding: 20px;
+    background: #fff;
+    // border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    opacity: 0.95;
+
+    .mapBigs {
+      width: 100%;
+      // height: 300px;
+      border: 1px solid #dcdfe6;
+    }
+
+    :global {
+      .amap-container img {
+        width: 25px !important;
+        height: 34px !important;
+      }
+
+      .amap-marker-label {
+        width: 230px;
+        padding: 6px;
+        overflow: hidden;
+        white-space: normal;
+        background: #fff;
+        border: none;
+      }
+
+      .amap-info-window {
+        position: relative;
+        top: -20px;
+        width: 230px;
+        padding: 3px 7px;
+        overflow: hidden;
+        white-space: normal;
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+      }
+
+      .amap-info-sharp {
+        position: absolute;
+        top: 21px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -8px;
+        border-top: 8px solid #fff;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+      }
+    }
+  }
+}
